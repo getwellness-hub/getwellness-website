@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getwellness-hub.github.io/getwellness-website/sitemap.xml
