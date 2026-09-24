@@ -1,269 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Building a Healthy Marriage | Wellness & Relationships</title>
 
-  <title>Building a Strong Marriage: Communication, Trust & Conflict Resolution | Wellness & Relationships</title>
+<meta name="description" content="Learn practical ways to build a healthy marriage through communication, trust, respect, emotional connection, boundaries and teamwork.">
 
-  <meta name="description" content="Learn practical ways to build a stronger marriage through communication, trust, healthy boundaries, financial conversations, emotional connection, and respectful conflict resolution.">
+<meta name="robots" content="index, follow">
 
-  <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/article-marriage.html">
 
-  <link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/article-marriage.html">
+<meta property="og:title" content="Building a Healthy Marriage">
+<meta property="og:description" content="Practical guidance for building trust, communication, respect and emotional connection in marriage.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://getwellness-hub.github.io/getwellness-website/article-marriage.html">
 
-  <meta property="og:title" content="Building a Strong Marriage: Communication, Trust & Conflict Resolution">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Building a Healthy Marriage">
+<meta name="twitter:description" content="Practical guidance for a healthier and stronger marriage.">
 
-  <meta property="og:description" content="Practical guidance on communication, trust, boundaries, finances, emotional connection and respectful conflict resolution in marriage.">
+<style>
 
-  <meta property="og:type" content="article">
+*{
+    box-sizing:border-box;
+}
 
-  <meta property="og:url" content="https://getwellness-hub.github.io/getwellness-website/article-marriage.html">
+html{
+    scroll-behavior:smooth;
+}
 
-  <link rel="stylesheet" href="style.css">
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f8f7;
+    color:#263238;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    border-bottom:1px solid #e4ece9;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav{
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:800;
+    color:#155e55;
+}
+
+.logo span{
+    color:#2f8f83;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    font-size:14px;
+    color:#536662;
+}
+
+.nav-links a:hover{
+    color:#16796b;
+}
+
+/* MAIN */
+
+.container{
+    max-width:850px;
+    margin:auto;
+    padding:30px 18px 60px;
+}
+
+.breadcrumb{
+    font-size:13px;
+    color:#70827e;
+    margin-bottom:18px;
+}
+
+.breadcrumb a{
+    color:#19796d;
+}
+
+/* ARTICLE */
+
+.article-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 8px 30px rgba(20,60,50,.07);
+}
+
+.article-label{
+    display:inline-block;
+    background:#e6f5f1;
+    color:#187568;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:42px;
+    line-height:1.15;
+    margin:0 0 15px;
+    color:#173d38;
+}
+
+.intro{
+    font-size:18px;
+    color:#61736f;
+    margin-bottom:30px;
+}
+
+h2{
+    color:#185e55;
+    font-size:25px;
+    margin-top:35px;
+    margin-bottom:12px;
+}
+
+h3{
+    color:#246d64;
+    font-size:19px;
+}
+
+p{
+    margin:10px 0 16px;
+}
+
+ul{
+    padding-left:22px;
+}
+
+li{
+    margin:7px 0;
+}
+
+/* TIP BOX */
+
+.tip{
+    background:#e9f7f2;
+    border-left:5px solid #43a795;
+    padding:18px 20px;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.tip strong{
+    color:#17695f;
+}
+
+/* TAKEAWAYS */
+
+.takeaways{
+    background:#f0f7f5;
+    border-radius:14px;
+    padding:22px;
+    margin-top:35px;
+}
+
+.takeaways h2{
+    margin-top:0;
+}
+
+.takeaways li{
+    margin-bottom:8px;
+}
+
+/* NAVIGATION CARDS */
+
+.article-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:35px;
+}
+
+.nav-card{
+    background:#ffffff;
+    border:1px solid #e0ebe8;
+    border-radius:14px;
+    padding:18px;
+    transition:.2s;
+}
+
+.nav-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(20,60,50,.08);
+}
+
+.nav-card small{
+    color:#78908b;
+    display:block;
+    margin-bottom:5px;
+}
+
+.nav-card strong{
+    color:#1b6259;
+}
+
+/* RELATED */
+
+.related{
+    margin-top:40px;
+}
+
+.related-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.related-card{
+    background:#ffffff;
+    border:1px solid #e0ebe8;
+    border-radius:14px;
+    padding:18px;
+    transition:.2s;
+}
+
+.related-card:hover{
+    transform:translateY(-3px);
+}
+
+.related-card small{
+    color:#2c8b7c;
+    font-weight:700;
+}
+
+.related-card h3{
+    margin:8px 0;
+    font-size:17px;
+}
+
+.related-card p{
+    font-size:13px;
+    color:#71807d;
+}
+
+/* FOOTER */
+
+footer{
+    background:#123c37;
+    color:#dcece8;
+    margin-top:40px;
+}
+
+.footer-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer-title{
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.footer-title span{
+    color:#72c5b6;
+}
+
+footer p{
+    color:#b8d0ca;
+    font-size:14px;
+}
+
+footer h3{
+    color:#ffffff;
+    font-size:15px;
+}
+
+footer a{
+    display:block;
+    color:#b8d0ca;
+    font-size:14px;
+    margin:7px 0;
+}
+
+footer a:hover{
+    color:#ffffff;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;
+    padding:18px;
+    color:#9fbbb5;
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .nav{
+        padding:13px 15px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .container{
+        padding:22px 12px 45px;
+    }
+
+    .article-card{
+        padding:23px 18px;
+        border-radius:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .intro{
+        font-size:16px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .article-nav{
+        grid-template-columns:1fr;
+    }
+
+    .related-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:32px 20px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="container">
-    <h1>Wellness & Relationships</h1>
+    <nav class="nav">
 
-    <nav>
-      <a href="index.html">Home</a>
+        <a href="index.html" class="logo">
+            Wellness <span>&amp; Relationships</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="article-communication.html">Articles</a>
+            <a href="article-consent.html">Consent</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
     </nav>
-  </div>
 </header>
 
 
 <main class="container">
 
-  <article>
-
-    <h1>Building a Strong Marriage: Communication, Trust & Conflict Resolution</h1>
-
-    <p>
-      A strong marriage is built over time through communication, trust,
-      respect, emotional connection, shared responsibility, and the ability
-      to handle disagreements in a healthy way.
-    </p>
-
-    <p>
-      Every marriage is different. However, several practical habits can help
-      couples understand each other better and build a more respectful and
-      supportive relationship.
-    </p>
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        &nbsp;›&nbsp;
+        <a href="index.html">Relationships</a>
+        &nbsp;›&nbsp;
+        Marriage
+    </div>
 
 
-    <h2>What Makes a Marriage Strong?</h2>
+    <article class="article-card">
 
-    <p>
-      A healthy marriage is not about avoiding every disagreement. It is about
-      creating a relationship where both partners can communicate honestly,
-      feel respected, and work together when challenges arise.
-    </p>
+        <span class="article-label">MARRIAGE &amp; RELATIONSHIPS</span>
 
-    <p>
-      Trust, patience, kindness, responsibility, and mutual understanding can
-      provide a strong foundation for a long-term relationship.
-    </p>
+        <h1>Building a Healthy Marriage</h1>
 
-
-    <h2>1. Communicate Openly and Respectfully</h2>
-
-    <p>
-      Good communication allows partners to discuss their feelings, needs,
-      expectations, concerns, and future plans without unnecessary blame.
-    </p>
-
-    <p>
-      Instead of interrupting or immediately defending yourself, try to listen
-      carefully and understand what your partner is saying.
-    </p>
-
-    <p>
-      Difficult conversations are often more productive when both partners
-      focus on the problem instead of attacking each other personally.
-    </p>
+        <p class="intro">
+            A healthy marriage is not about being perfect.
+            It is about learning to communicate, respect each other,
+            solve problems together and continue building emotional connection.
+        </p>
 
 
-    <h2>2. Build Trust</h2>
+        <h2>1. Communication Comes First</h2>
 
-    <p>
-      Trust develops through consistent actions. Keeping promises, being
-      honest, respecting privacy, and communicating openly can help strengthen
-      trust between partners.
-    </p>
+        <p>
+            Good communication gives couples a way to understand each
+            other's thoughts, feelings and needs.
+        </p>
 
-    <p>
-      If trust has been damaged, rebuilding it may take time. Consistency,
-      honest communication, and responsible behavior can help restore
-      confidence in the relationship.
-    </p>
+        <p>
+            Instead of expecting your partner to automatically know what
+            you need, try expressing it clearly and respectfully.
+        </p>
 
-
-    <h2>3. Handle Arguments in a Healthy Way</h2>
-
-    <p>
-      Disagreements are normal in relationships. The goal is not necessarily
-      to avoid every argument but to handle disagreements without threats,
-      humiliation, intimidation, or unnecessary personal attacks.
-    </p>
-
-    <p>
-      If emotions become too intense, taking a short break and returning to
-      the conversation later can sometimes help both partners communicate
-      more calmly.
-    </p>
+        <ul>
+            <li>Listen before responding.</li>
+            <li>Speak honestly without insulting.</li>
+            <li>Ask questions when something is unclear.</li>
+            <li>Talk about problems before they become bigger.</li>
+        </ul>
 
 
-    <h2>4. Build Emotional Connection</h2>
-
-    <p>
-      Emotional connection can grow through small everyday actions such as
-      spending quality time together, showing appreciation, asking about each
-      other's day, and being available during difficult moments.
-    </p>
-
-    <p>
-      Feeling heard and valued can help partners maintain a stronger emotional
-      bond over time.
-    </p>
+        <div class="tip">
+            <strong>Remember:</strong><br>
+            The goal of a difficult conversation should be understanding
+            and problem-solving—not winning an argument.
+        </div>
 
 
-    <h2>5. Discuss Money Openly</h2>
+        <h2>2. Build Trust Every Day</h2>
 
-    <p>
-      Financial issues can become a source of conflict when couples do not
-      discuss expectations clearly. Talking openly about income, expenses,
-      savings, debt, and financial goals can reduce misunderstandings.
-    </p>
+        <p>
+            Trust develops through consistent actions over time.
+            Small promises, honesty and reliability can make a significant
+            difference in a relationship.
+        </p>
 
-    <p>
-      Couples may have different spending habits, so creating shared financial
-      priorities can help them make decisions together.
-    </p>
-
-
-    <h2>6. Respect Personal Boundaries</h2>
-
-    <p>
-      Marriage does not remove the need for personal boundaries. Each partner
-      can have individual interests, friendships, privacy needs, and personal
-      space.
-    </p>
-
-    <p>
-      Healthy boundaries should be communicated clearly and respected by both
-      partners.
-    </p>
+        <p>
+            If trust has been damaged, rebuilding it usually requires
+            patience, transparency and consistent behavior.
+        </p>
 
 
-    <h2>7. Maintain Mutual Respect</h2>
+        <h2>3. Show Respect During Disagreements</h2>
 
-    <p>
-      Respect is important even during disagreements. Avoiding insults,
-      humiliation, threats, or controlling behavior can help create a safer
-      and healthier relationship environment.
-    </p>
+        <p>
+            Couples will disagree. A disagreement does not automatically
+            mean that a relationship is unhealthy.
+        </p>
 
-    <p>
-      Both partners deserve to have their opinions, feelings, and boundaries
-      taken seriously.
-    </p>
+        <p>
+            What matters is how both people behave during the disagreement.
+        </p>
 
-
-    <h2>Key Takeaways</h2>
-
-    <ul>
-      <li>Healthy communication can strengthen understanding and trust.</li>
-      <li>Trust develops through honesty and consistent actions.</li>
-      <li>Disagreements can be handled without personal attacks.</li>
-      <li>Emotional connection grows through attention and appreciation.</li>
-      <li>Financial conversations can prevent misunderstandings.</li>
-      <li>Personal boundaries and privacy deserve mutual respect.</li>
-      <li>Professional support can be useful when serious relationship problems persist.</li>
-    </ul>
+        <ul>
+            <li>Avoid insults and humiliation.</li>
+            <li>Do not threaten your partner.</li>
+            <li>Allow each person to explain their perspective.</li>
+            <li>Take a break if the conversation becomes too heated.</li>
+            <li>Return to the conversation when both people are calmer.</li>
+        </ul>
 
 
-    <h2>When Professional Support May Help</h2>
+        <h2>4. Make Time for Each Other</h2>
 
-    <p>
-      If a couple is experiencing persistent conflict, communication problems,
-      loss of trust, or other serious relationship difficulties, speaking with
-      a qualified relationship or mental health professional may provide
-      additional support.
-    </p>
+        <p>
+            Work, family responsibilities and daily stress can make couples
+            spend less meaningful time together.
+        </p>
 
-    <p>
-      If there is fear, violence, threats, or coercive behavior in a
-      relationship, consider seeking appropriate professional or local support
-      and prioritizing personal safety.
-    </p>
+        <p>
+            Connection does not always require an expensive date.
+            A short walk, shared meal, conversation or simple activity can
+            help maintain closeness.
+        </p>
 
 
-    <h2>Final Thought</h2>
+        <h2>5. Learn How to Solve Problems Together</h2>
 
-    <p>
-      A strong marriage is built through everyday choices: listening,
-      communicating honestly, respecting boundaries, showing appreciation,
-      solving problems together, and treating each other with dignity.
-    </p>
+        <p>
+            A strong partnership treats many challenges as shared problems
+            rather than one person versus another.
+        </p>
+
+        <h3>A simple approach:</h3>
+
+        <ul>
+            <li>Identify the actual problem.</li>
+            <li>Listen to both perspectives.</li>
+            <li>Discuss possible solutions.</li>
+            <li>Choose a practical next step.</li>
+            <li>Review later to see whether the solution worked.</li>
+        </ul>
 
 
-    <hr>
+        <h2>6. Respect Personal Boundaries</h2>
 
-    <h2>Related Articles</h2>
+        <p>
+            Marriage does not mean that two people lose their individual
+            identity. Healthy relationships can include personal space,
+            friendships, interests and time for oneself.
+        </p>
 
-    <ul>
+        <p>
+            Boundaries should be communicated clearly and respected by both
+            partners.
+        </p>
 
-      <li>
-        <a href="article-communication.html">
-          How to Communicate Better With Your Partner
+
+        <h2>7. Keep Emotional Connection Strong</h2>
+
+        <p>
+            Emotional intimacy grows when partners feel heard, valued and
+            accepted.
+        </p>
+
+        <p>
+            Simple habits can help:
+        </p>
+
+        <ul>
+            <li>Ask how your partner is genuinely doing.</li>
+            <li>Notice and appreciate their efforts.</li>
+            <li>Express gratitude.</li>
+            <li>Share important thoughts and feelings.</li>
+            <li>Be present during meaningful conversations.</li>
+        </ul>
+
+
+        <h2>8. Discuss Money Honestly</h2>
+
+        <p>
+            Financial stress can create tension in many relationships.
+            Couples can reduce misunderstandings by discussing money openly.
+        </p>
+
+        <ul>
+            <li>Talk about regular expenses.</li>
+            <li>Discuss savings goals.</li>
+            <li>Be honest about significant debts.</li>
+            <li>Plan major purchases together.</li>
+            <li>Agree on financial priorities.</li>
+        </ul>
+
+
+        <h2>9. Protect the Relationship From Harm</h2>
+
+        <p>
+            Healthy relationships require safety and respect.
+            Controlling behavior, threats, intimidation, humiliation or
+            physical violence are not healthy ways to resolve conflict.
+        </p>
+
+        <p>
+            If someone is experiencing abuse or feels unsafe, seeking help
+            from a trusted person or appropriate professional or local support
+            service can be important.
+        </p>
+
+
+        <h2>10. Keep Growing Together</h2>
+
+        <p>
+            A marriage can change as life changes. Careers, children,
+            financial responsibilities, aging parents and personal goals can
+            all affect a relationship.
+        </p>
+
+        <p>
+            Healthy couples continue learning about each other and adjusting
+            their partnership as circumstances change.
+        </p>
+
+
+        <div class="takeaways">
+
+            <h2>Key Takeaways</h2>
+
+            <ul>
+                <li>Good communication is a foundation of a healthy marriage.</li>
+                <li>Trust is built through consistent and honest actions.</li>
+                <li>Disagreements can be handled without disrespect.</li>
+                <li>Quality time helps maintain emotional connection.</li>
+                <li>Personal boundaries should be respected.</li>
+                <li>Money and important responsibilities should be discussed openly.</li>
+                <li>Both partners can continue learning and growing together.</li>
+            </ul>
+
+        </div>
+
+    </article>
+
+
+    <!-- PREVIOUS / NEXT -->
+
+    <div class="article-nav">
+
+        <a href="article-consent.html" class="nav-card">
+            <small>← Previous Article</small>
+            <strong>What Healthy Consent Looks Like</strong>
         </a>
-      </li>
 
-      <li>
-        <a href="article-consent.html">
-          What Healthy Consent Looks Like
-        </a>
-      </li>
-
-      <li>
-        <a href="article-privacy.html">
-          Protecting Intimate Privacy Online
-        </a>
-      </li>
-
-      <li>
-        <a href="article-sexual-wellness.html">
-          Understanding Sexual Wellness: A Practical Guide for Adults
-        </a>
-      </li>
-
-    </ul>
-
-
-    <p>
-      <a href="index.html">← Back to home</a>
-    </p>
-
-  </article>
-
-</main>
-
-
-<footer>
-  <div class="container">
-    <p>
-      © 2026 Wellness & Relationships.
-      Educational resources for healthier relationships and wellbeing.
-    </p>
-  </div>
-</footer>
-
-
-</body>
-</html>
+        <a href="article
