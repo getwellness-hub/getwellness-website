@@ -1,249 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Understanding Sexual Wellness: A Practical Guide for Adults | Wellness & Relationships</title>
+<title>Sexual Wellness & Healthy Relationships | Wellness & Relationships</title>
 
-  <meta name="description" content="Learn the basics of sexual wellness, healthy communication, personal boundaries, safer choices, emotional wellbeing, and when professional guidance may help.">
+<meta name="description" content="Learn the basics of sexual wellness, communication, consent, personal boundaries, protection, privacy and healthy relationships.">
 
-  <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/article-sexual-wellness.html">
+<link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/article-sexual-wellness.html">
 
-  <meta property="og:title" content="Understanding Sexual Wellness: A Practical Guide for Adults">
+<meta property="og:title" content="Sexual Wellness & Healthy Relationships">
+<meta property="og:description" content="Educational information about sexual wellness, communication, consent, boundaries, privacy and healthy relationships.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://getwellness-hub.github.io/getwellness-website/article-sexual-wellness.html">
 
-  <meta property="og:description" content="A practical educational guide to sexual wellness, communication, consent, boundaries, safer choices and emotional wellbeing.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sexual Wellness & Healthy Relationships">
+<meta name="twitter:description" content="Educational information for healthier, safer and more respectful relationships.">
 
-  <meta property="og:type" content="article">
 
-  <meta property="og:url" content="https://getwellness-hub.github.io/getwellness-website/article-sexual-wellness.html">
+<style>
 
-  <link rel="stylesheet" href="style.css">
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f8f7;
+    color:#263238;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    border-bottom:1px solid #e4ece9;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav{
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:800;
+    color:#155e55;
+}
+
+.logo span{
+    color:#2f8f83;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    font-size:14px;
+    color:#536662;
+}
+
+.nav-links a:hover{
+    color:#16796b;
+}
+
+/* MAIN */
+
+.container{
+    max-width:850px;
+    margin:auto;
+    padding:30px 18px 60px;
+}
+
+.breadcrumb{
+    font-size:13px;
+    color:#70827e;
+    margin-bottom:18px;
+}
+
+.breadcrumb a{
+    color:#19796d;
+}
+
+/* ARTICLE */
+
+.article-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 8px 30px rgba(20,60,50,.07);
+}
+
+.article-label{
+    display:inline-block;
+    background:#e6f5f1;
+    color:#187568;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:42px;
+    line-height:1.15;
+    margin:0 0 15px;
+    color:#173d38;
+}
+
+.intro{
+    font-size:18px;
+    color:#61736f;
+    margin-bottom:30px;
+}
+
+h2{
+    color:#185e55;
+    font-size:25px;
+    margin-top:35px;
+    margin-bottom:12px;
+}
+
+h3{
+    color:#246d64;
+    font-size:19px;
+}
+
+p{
+    margin:10px 0 16px;
+}
+
+ul{
+    padding-left:22px;
+}
+
+li{
+    margin:7px 0;
+}
+
+/* TIP */
+
+.tip{
+    background:#e9f7f2;
+    border-left:5px solid #43a795;
+    padding:18px 20px;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.tip strong{
+    color:#17695f;
+}
+
+/* TAKEAWAYS */
+
+.takeaways{
+    background:#f0f7f5;
+    border-radius:14px;
+    padding:22px;
+    margin-top:35px;
+}
+
+.takeaways h2{
+    margin-top:0;
+}
+
+.takeaways li{
+    margin-bottom:8px;
+}
+
+/* NAVIGATION */
+
+.article-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:35px;
+}
+
+.nav-card{
+    background:#ffffff;
+    border:1px solid #e0ebe8;
+    border-radius:14px;
+    padding:18px;
+    transition:.2s;
+}
+
+.nav-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(20,60,50,.08);
+}
+
+.nav-card small{
+    color:#78908b;
+    display:block;
+    margin-bottom:5px;
+}
+
+.nav-card strong{
+    color:#1b6259;
+}
+
+/* RELATED */
+
+.related{
+    margin-top:40px;
+}
+
+.related-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.related-card{
+    background:#ffffff;
+    border:1px solid #e0ebe8;
+    border-radius:14px;
+    padding:18px;
+    transition:.2s;
+}
+
+.related-card:hover{
+    transform:translateY(-3px);
+}
+
+.related-card small{
+    color:#2c8b7c;
+    font-weight:700;
+}
+
+.related-card h3{
+    margin:8px 0;
+    font-size:17px;
+}
+
+.related-card p{
+    font-size:13px;
+    color:#71807d;
+}
+
+/* FOOTER */
+
+footer{
+    background:#123c37;
+    color:#dcece8;
+    margin-top:40px;
+}
+
+.footer-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer-title{
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.footer-title span{
+    color:#72c5b6;
+}
+
+footer p{
+    color:#b8d0ca;
+    font-size:14px;
+}
+
+footer h3{
+    color:#ffffff;
+    font-size:15px;
+}
+
+footer a{
+    display:block;
+    color:#b8d0ca;
+    font-size:14px;
+    margin:7px 0;
+}
+
+footer a:hover{
+    color:#ffffff;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;
+    padding:18px;
+    color:#9fbbb5;
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .nav{
+        padding:13px 15px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .container{
+        padding:22px 12px 45px;
+    }
+
+    .article-card{
+        padding:23px 18px;
+        border-radius:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .intro{
+        font-size:16px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .article-nav{
+        grid-template-columns:1fr;
+    }
+
+    .related-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:32px 20px;
+    }
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
-  <div class="container">
-    <h1>Wellness & Relationships</h1>
 
-    <nav>
-      <a href="index.html">Home</a>
-    </nav>
-  </div>
+<nav class="nav">
+
+<a href="index.html" class="logo">
+Wellness <span>&amp; Relationships</span>
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="article-communication.html">Articles</a>
+<a href="article-consent.html">Consent</a>
+<a href="article-marriage.html">Marriage</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
 </header>
 
 
 <main class="container">
 
-  <article>
 
-    <h1>Understanding Sexual Wellness: A Practical Guide for Adults</h1>
+<div class="breadcrumb">
 
-    <p>
-      Sexual wellness is an important part of overall wellbeing. It includes
-      physical health, emotional wellbeing, respectful relationships,
-      communication, personal boundaries, consent, privacy, and informed
-      decision-making.
-    </p>
+<a href="index.html">Home</a>
+&nbsp;›&nbsp;
+<a href="index.html">Wellness</a>
+&nbsp;›&nbsp;
+Sexual Wellness
 
-    <p>
-      This guide provides general educational information for adults and
-      focuses on practical principles that can support healthier and more
-      respectful relationships.
-    </p>
+</div>
 
 
-    <h2>What Is Sexual Wellness?</h2>
-
-    <p>
-      Sexual wellness is more than the absence of health problems. It includes
-      understanding your body, communicating openly, respecting boundaries,
-      making informed choices, and feeling safe and respected in relationships.
-    </p>
-
-    <p>
-      A healthy approach also recognizes that people have different
-      experiences, values, comfort levels, and relationship goals.
-    </p>
+<article class="article-card">
 
 
-    <h2>Communication Matters</h2>
-
-    <p>
-      Open and respectful communication can help partners understand each
-      other's expectations, comfort levels, concerns, and boundaries.
-    </p>
-
-    <p>
-      Instead of assuming what a partner wants or feels, ask questions and
-      listen carefully to the answer. Honest communication can reduce
-      misunderstandings and help build trust.
-    </p>
-
-    <p>
-      Good communication also means being able to discuss difficult subjects
-      without pressure, threats, embarrassment, or judgment.
-    </p>
+<span class="article-label">
+SEXUAL WELLNESS
+</span>
 
 
-    <h2>Consent and Respect</h2>
-
-    <p>
-      Consent means that people freely agree to participate in something.
-      Consent should be voluntary, informed, and based on mutual respect.
-    </p>
-
-    <p>
-      A person can change their mind at any time. Silence, pressure, fear, or
-      manipulation should not be treated as agreement.
-    </p>
-
-    <p>
-      Healthy relationships respect a person's decision and do not use
-      pressure to obtain agreement.
-    </p>
+<h1>
+Sexual Wellness &amp; Healthy Relationships
+</h1>
 
 
-    <h2>Personal Boundaries</h2>
-
-    <p>
-      Personal boundaries describe what someone is comfortable with and what
-      they are not comfortable with. Boundaries can relate to physical
-      contact, communication, privacy, personal space, photographs, and
-      relationship expectations.
-    </p>
-
-    <p>
-      Healthy partners communicate their boundaries clearly and respect the
-      boundaries of others. A boundary does not need to be justified before
-      it deserves respect.
-    </p>
+<p class="intro">
+Sexual wellness is about more than sexual activity.
+It includes communication, consent, comfort, personal boundaries,
+privacy, safety and respect between people.
+</p>
 
 
-    <h2>Informed and Safer Choices</h2>
+<h2>1. Understand Sexual Wellness</h2>
 
-    <p>
-      Sexual wellness also involves making informed decisions about health,
-      contraception, sexually transmitted infections, and personal safety.
-    </p>
+<p>
+Sexual wellness involves having accurate information, making informed
+decisions and being able to communicate about personal boundaries and
+relationship expectations.
+</p>
 
-    <p>
-      Reliable health information can help adults understand available
-      options and make decisions that fit their circumstances.
-    </p>
-
-    <ul>
-      <li>Learn from reliable and evidence-based health information.</li>
-      <li>Discuss important health concerns openly with a partner when appropriate.</li>
-      <li>Use appropriate protection and safer-sex practices.</li>
-      <li>Seek professional healthcare advice when health concerns arise.</li>
-    </ul>
+<p>
+It can also include emotional wellbeing, mutual respect and knowing
+when to seek appropriate health information or professional support.
+</p>
 
 
-    <h2>Emotional Wellbeing</h2>
+<div class="tip">
 
-    <p>
-      Sexual wellbeing is also connected with emotions and relationships.
-      Feelings such as trust, comfort, anxiety, insecurity, affection, and
-      respect can influence how people experience relationships.
-    </p>
+<strong>Remember:</strong><br>
 
-    <p>
-      Healthy relationships allow people to communicate their feelings
-      without fear of humiliation or unnecessary pressure.
-    </p>
+Healthy intimacy should involve mutual respect, clear communication,
+freely given consent and consideration for each person's comfort
+and boundaries.
 
-    <p>
-      If a relationship regularly involves fear, coercion, threats,
-      manipulation, or disrespect, seeking support from a trusted person or
-      qualified professional may be helpful.
-    </p>
+</div>
 
 
-    <h2>Key Takeaways</h2>
+<h2>2. Communication Matters</h2>
 
-    <ul>
-      <li>Sexual wellness is part of overall physical and emotional wellbeing.</li>
-      <li>Respectful communication can strengthen relationships.</li>
-      <li>Consent should be voluntary, informed, and respected.</li>
-      <li>Personal boundaries deserve respect.</li>
-      <li>Reliable health information supports informed decisions.</li>
-      <li>Professional healthcare advice can be useful when health concerns arise.</li>
-    </ul>
+<p>
+Clear communication can help people understand each other's expectations,
+comfort levels and boundaries.
+</p>
 
+<ul>
 
-    <h2>When to Seek Professional Help</h2>
+<li>Talk openly and respectfully.</li>
 
-    <p>
-      Consider speaking with a qualified healthcare professional if you have
-      persistent pain, sexual health concerns, possible exposure to an
-      infection, contraception questions, or another issue that you are
-      unable to resolve safely through general information.
-    </p>
+<li>Listen to your partner.</li>
 
+<li>Ask questions when something is unclear.</li>
 
-    <h2>Final Thought</h2>
+<li>Do not assume that silence means agreement.</li>
 
-    <p>
-      Sexual wellness is built through knowledge, respect, communication,
-      consent, and responsible choices. Small improvements in communication
-      and awareness can contribute to healthier relationships.
-    </p>
+<li>Respect a person's answer.</li>
+
+</ul>
 
 
-    <hr>
+<h2>3. Consent Should Be Clear</h2>
 
-    <h2>Related Articles</h2>
+<p>
+Consent means freely agreeing to something. It should not be obtained
+through pressure, threats, manipulation or fear.
+</p>
 
-    <ul>
-      <li>
-        <a href="article-communication.html">
-          How to Communicate Better With Your Partner
-        </a>
-      </li>
+<p>
+Consent can change. A person can change their mind at any point,
+and that decision should be respected.
+</p>
 
-      <li>
-        <a href="article-consent.html">
-          What Healthy Consent Looks Like
-        </a>
-      </li>
+<ul>
 
-      <li>
-        <a href="article-privacy.html">
-          Protecting Intimate Privacy Online
-        </a>
-      </li>
+<li>Consent should be voluntary.</li>
 
-      <li>
-        <a href="article-marriage.html">
-          Building a Strong Marriage: Communication, Trust & Conflict Resolution
-        </a>
-      </li>
-    </ul>
+<li>Consent should be informed.</li>
+
+<li>Consent should be specific to the situation.</li>
+
+<li>Consent can be withdrawn.</li>
+
+<li>Each person is responsible for respecting boundaries.</li>
+
+</ul>
 
 
-    <p>
-      <a href="index.html">← Back to home</a>
-    </p>
+<h2>4. Respect Personal Boundaries</h2>
 
-  </article>
+<p>
+Everyone has different comfort levels. A healthy relationship makes
+space for people to communicate what they are comfortable with and
+what they are not.
+</p>
+
+<p>
+A boundary is not something that needs to be debated or mocked.
+It should be communicated and respected.
+</p>
+
+
+<h2>5. Safer Sexual Health Decisions</h2>
+
+<p>
+People can make informed decisions about sexual health by learning
+about appropriate protection, sexually transmitted infections,
+testing and reproductive health.
+</p>
+
+<p>
+Reliable health information can help people understand available
+options and make decisions appropriate to their circumstances.
+</p>
+
+<ul>
+
+<li>Learn about appropriate protection.</li>
+
+<li>Understand STI prevention and testing.</li>
+
+<li>Seek qualified healthcare advice when needed.</li>
+
+<li>Discuss relevant health information with a partner.</li>
+
+</ul>
+
+
+<h2>6. Emotional Wellbeing Matters</h2>
+
+<p>
+Sexual wellbeing can also be connected with emotions, expectations,
+self-esteem and relationship satisfaction.
+</p>
+
+<p>
+People may experience different emotions before or after intimate
+situations. Honest communication can help partners understand each
+other better.
+</p>
+
+
+<h2>7. Respect Privacy</h2>
+
+<p>
+Private conversations, photographs and personal information should
+be handled carefully.
+</p>
+
+<ul>
+
+<li>Do not share private images without permission.</li>
+
+<li>Do not access private accounts without permission.</li>
+
+<li>Protect sensitive personal information.</li>
+
+<li>Discuss digital boundaries openly.</li>
+
+</ul>
+
+
+<h2>8. Avoid Pressure and Coercion</h2>
+
+<p>
+No one should feel pressured into intimate activity because of fear,
+guilt, threats, financial dependence or repeated unwanted requests.
+</p>
+
+<p>
+Respect means accepting another person's decision, even when that
+decision is different from what you hoped for.
+</p>
+
+
+<h2>9. Know When to Seek Professional Help</h2>
+
+<p>
+Questions about sexual health can sometimes require professional
+guidance. A qualified healthcare professional can provide information
+about symptoms, testing, contraception, reproductive health and other
+health concerns.
+</p>
+
+<p>
+If an intimate relationship involves fear, coercion, violence or
+abuse, seeking appropriate support can also be important.
+</p>
+
+
+<h2>10. Build Healthy Intimacy</h2>
+
+<p>
+Healthy intimacy can develop through trust, communication, respect
+and emotional connection.
+</p>
+
+<p>
+There is no single definition of a healthy relationship for everyone.
+What matters is that people communicate honestly, respect boundaries,
+make informed decisions and treat each other with dignity.
+</p>
+
+
+<div class="takeaways">
+
+<h2>Key Takeaways</h2>
+
+<ul>
+
+<li>Sexual wellness includes physical, emotional and relationship wellbeing.</li>
+
+<li>Clear communication helps people understand boundaries and expectations.</li>
+
+<li>Consent should be freely given, informed and respected.</li>
+
+<li>Consent can be withdrawn at any time.</li>
+
+<li>Personal and digital privacy should be respected.</li>
+
+<li>Learning about sexual health can support informed decisions.</li>
+
+<li>Pressure, threats and coercion are not healthy forms of communication.</li>
+
+<li>Professional healthcare advice can be useful for specific health concerns.</li>
+
+</ul>
+
+</div>
+
+
+</article>
+
+
+<!-- PREVIOUS / NEXT -->
+
+<div class="article-nav">
+
+
+<a href="article-privacy.html" class="nav-card">
+
+<small>
+← Previous Article
+</small>
+
+<strong>
+Protecting Personal Privacy
+</strong>
+
+</a>
+
+
+<a href="article-communication.html" class="nav-card">
+
+<small>
+Next Article →
+</small>
+
+<strong>
+How to Communicate Better With Your Partner
+</strong>
+
+</a>
+
+
+</div>
+
+
+<!-- RELATED ARTICLES -->
+
+<section class="related">
+
+
+<h2>
+Related Articles
+</h2>
+
+
+<div class="related-grid">
+
+
+<a href="article-consent.html" class="related-card">
+
+<small>
+CONSENT
+</small>
+
+<h3>
+What Healthy Consent Looks Like
+</h3>
+
+<p>
+Understand why consent should be voluntary, informed and respected.
+</p>
+
+</a>
+
+
+<a href="article-communication.html" class="related-card">
+
+<small>
+COMMUNICATION
+</small>
+
+<h3>
+How to Communicate Better With Your Partner
+</h3>
+
+<p>
+Learn practical communication habits for healthier relationships.
+</p>
+
+</a>
+
+
+<a href="article-privacy.html" class="related-card">
+
+<small>
+PRIVACY
+</small>
+
+<h3>
+Protecting Personal Privacy
+</h3>
+
+<p>
+Learn how privacy and boundaries can support healthy relationships.
+</p>
+
+</a>
+
+
+</div>
+
+</section>
+
 
 </main>
 
 
 <footer>
-  <div class="container">
-    <p>
-      © 2026 Wellness & Relationships. Educational resources for healthier
-      relationships and wellbeing.
-    </p>
-  </div>
+
+
+<div class="footer-inner">
+
+
+<div>
+
+<div class="footer-title">
+Wellness <span>&amp; Relationships</span>
+</div>
+
+<p>
+Practical information for better communication,
+healthy relationships, personal wellbeing and
+respectful connections.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Explore
+</h3>
+
+<a href="index.html">Home</a>
+<a href="article-communication.html">Articles</a>
+<a href="article-consent.html">Consent</a>
+<a href="article-marriage.html">Marriage</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Information
+</h3>
+
+<a href="contact.html">Contact</a>
+<a href="article-privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="sitemap.xml">Sitemap</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Wellness &amp; Relationships. All rights reserved.
+
+</div>
+
+
 </footer>
+
 
 </body>
 </html>
