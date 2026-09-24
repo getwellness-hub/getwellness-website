@@ -22,14 +22,12 @@
 <meta property="og:description"
       content="Practical guides for healthier relationships, communication, consent, marriage and wellness.">
 
-<meta property="og:type"
-      content="website">
+<meta property="og:type" content="website">
 
 <meta property="og:url"
       content="https://getwellness-hub.github.io/getwellness-website/">
 
-<meta name="twitter:card"
-      content="summary">
+<meta name="twitter:card" content="summary">
 
 <style>
 
@@ -62,9 +60,7 @@ a {
     color: inherit;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .topbar {
     background: #ffffff;
@@ -77,7 +73,7 @@ a {
 .nav {
     max-width: 1120px;
     margin: auto;
-    padding: 16px 20px;
+    padding: 12px 20px;
 
     display: flex;
     align-items: center;
@@ -85,13 +81,31 @@ a {
     gap: 20px;
 }
 
+/* LOGO */
+
 .brand {
-    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 20px;
     font-weight: 800;
     color: #173c32;
 }
 
-.brand span {
+.brand-logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid #2f8f6b;
+
+    box-shadow:
+        0 4px 12px rgba(30,70,55,.12);
+}
+
+.brand-name span {
     color: #2f8f6b;
 }
 
@@ -111,9 +125,7 @@ a {
     color: #2f8f6b;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     max-width: 1120px;
@@ -199,11 +211,16 @@ a {
     border-radius: 24px;
     padding: 32px;
     box-shadow: 0 20px 50px rgba(23,60,50,.15);
+    text-align: center;
 }
 
-.hero-card .icon {
-    font-size: 42px;
-    margin-bottom: 15px;
+.hero-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 4px solid white;
 }
 
 .hero-card h2 {
@@ -216,9 +233,7 @@ a {
     font-size: 15px;
 }
 
-/* =========================
-   SEARCH
-========================= */
+/* SEARCH */
 
 .search-section {
     max-width: 1120px;
@@ -234,6 +249,7 @@ a {
 
     display: flex;
     align-items: center;
+
     box-shadow: 0 8px 25px rgba(30,70,55,.05);
 }
 
@@ -251,9 +267,7 @@ a {
     background: transparent;
 }
 
-/* =========================
-   SECTION
-========================= */
+/* SECTIONS */
 
 .section {
     max-width: 1120px;
@@ -275,14 +289,11 @@ a {
     color: #697771;
 }
 
-/* =========================
-   TOPICS
-========================= */
+/* TOPICS */
 
 .topic-grid {
     display: grid;
-    grid-template-columns:
-        repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 14px;
 }
 
@@ -312,14 +323,11 @@ a {
     font-size: 14px;
 }
 
-/* =========================
-   ARTICLES
-========================= */
+/* ARTICLES */
 
 .article-grid {
     display: grid;
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -328,8 +336,10 @@ a {
     border: 1px solid #e1e9e5;
     border-radius: 18px;
     padding: 24px;
+
     display: flex;
     flex-direction: column;
+
     transition: .2s ease;
 }
 
@@ -367,9 +377,7 @@ a {
     font-size: 14px;
 }
 
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about {
     background: white;
@@ -398,9 +406,7 @@ a {
     margin-bottom: 12px;
 }
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta {
     max-width: 1120px;
@@ -426,9 +432,7 @@ a {
     margin-bottom: 20px;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     background: #173c32;
@@ -442,8 +446,7 @@ footer {
     padding: 45px 20px 25px;
 
     display: grid;
-    grid-template-columns:
-        1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     gap: 40px;
 }
 
@@ -487,14 +490,22 @@ footer {
     font-size: 13px;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 800px) {
 
     .nav {
-        padding: 14px 16px;
+        padding: 10px 14px;
+    }
+
+    .brand-logo {
+        width: 46px;
+        height: 46px;
+    }
+
+    .brand {
+        font-size: 16px;
+        gap: 9px;
     }
 
     .nav-links {
@@ -511,7 +522,7 @@ footer {
     }
 
     .hero-card {
-        display: none;
+        display: block;
     }
 
     .hero h1 {
@@ -523,8 +534,7 @@ footer {
     }
 
     .topic-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .article-grid {
@@ -568,8 +578,7 @@ footer {
     }
 
     .topic-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cta-box {
@@ -589,13 +598,24 @@ footer {
     <div class="nav">
 
         <a href="index.html" class="brand">
-            Wellness<span>&</span>Relationships
+
+            <img
+                src="file_00000000917081f887d9b94d29fdda90.png"
+                alt="Wellness & Relationships Logo"
+                class="brand-logo">
+
+            <div class="brand-name">
+                Wellness<span>&</span>Relationships
+            </div>
+
         </a>
 
         <nav class="nav-links">
+
             <a href="#topics">Topics</a>
             <a href="#articles">Articles</a>
             <a href="#about">About</a>
+
         </nav>
 
     </div>
@@ -643,7 +663,10 @@ footer {
 
     <div class="hero-card">
 
-        <div class="icon">🌿</div>
+        <img
+            src="file_00000000917081f887d9b94d29fdda90.png"
+            alt="Wellness & Relationships"
+            class="hero-logo">
 
         <h2>
             Learn. Understand. Grow.
@@ -697,48 +720,29 @@ footer {
 
     <div class="topic-grid">
 
-        <a class="topic"
-           href="#articles">
-
+        <a class="topic" href="#articles">
             <div class="topic-icon">💬</div>
             <strong>Communication</strong>
-
         </a>
 
-
-        <a class="topic"
-           href="#articles">
-
+        <a class="topic" href="#articles">
             <div class="topic-icon">❤️</div>
             <strong>Relationships</strong>
-
         </a>
 
-
-        <a class="topic"
-           href="#articles">
-
+        <a class="topic" href="#articles">
             <div class="topic-icon">💍</div>
             <strong>Marriage</strong>
-
         </a>
 
-
-        <a class="topic"
-           href="#articles">
-
+        <a class="topic" href="#articles">
             <div class="topic-icon">🤝</div>
             <strong>Consent</strong>
-
         </a>
 
-
-        <a class="topic"
-           href="#articles">
-
+        <a class="topic" href="#articles">
             <div class="topic-icon">🌱</div>
             <strong>Sexual Wellness</strong>
-
         </a>
 
     </div>
@@ -762,8 +766,7 @@ footer {
     </div>
 
 
-    <div class="article-grid" id="articleGrid">
-
+    <div class="article-grid">
 
         <article class="article-card">
 
@@ -906,7 +909,6 @@ footer {
 
         </article>
 
-
     </div>
 
 </section>
@@ -996,7 +998,6 @@ footer {
 
     <div class="footer-inner">
 
-
         <div>
 
             <div class="footer-brand">
@@ -1033,7 +1034,6 @@ footer {
             <a href="sitemap.xml">Sitemap</a>
 
         </div>
-
 
     </div>
 
