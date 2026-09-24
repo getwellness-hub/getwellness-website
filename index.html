@@ -51,8 +51,11 @@ body {
         sans-serif;
 
     background: #f7faf9;
-    color: #17201d;
-    line-height: 1.7;
+
+    /* IMPROVED READABILITY */
+    color: #26332f;
+
+    line-height: 1.75;
 }
 
 a {
@@ -118,7 +121,9 @@ a {
 .nav-links a {
     font-size: 15px;
     font-weight: 600;
-    color: #43534d;
+
+    /* DARKER */
+    color: #35463f;
 }
 
 .nav-links a:hover {
@@ -164,7 +169,10 @@ a {
 .hero p {
     max-width: 680px;
     font-size: 18px;
-    color: #596862;
+
+    /* DARKER */
+    color: #46534f;
+
     margin-bottom: 28px;
 }
 
@@ -265,6 +273,12 @@ a {
     font-size: 16px;
     padding: 12px 5px;
     background: transparent;
+
+    color: #26332f;
+}
+
+.search-box input::placeholder {
+    color: #64716c;
 }
 
 /* SECTIONS */
@@ -283,10 +297,17 @@ a {
     font-size: 34px;
     color: #173c32;
     margin-bottom: 6px;
+
+    /* STRONGER */
+    font-weight: 800;
 }
 
 .section-heading p {
-    color: #697771;
+
+    /* DARKER */
+    color: #52605a;
+
+    line-height: 1.7;
 }
 
 /* TOPICS */
@@ -318,9 +339,14 @@ a {
 }
 
 .topic strong {
+
     display: block;
-    color: #23483c;
+
+    /* DARKER */
+    color: #263f36;
+
     font-size: 14px;
+    font-weight: 700;
 }
 
 /* ARTICLES */
@@ -362,11 +388,17 @@ a {
     line-height: 1.3;
     color: #173c32;
     margin-bottom: 10px;
+
+    font-weight: 800;
 }
 
 .article-card p {
-    color: #65736d;
+
+    /* DARKER */
+    color: #46534f;
+
     font-size: 14px;
+    line-height: 1.75;
     margin-bottom: 20px;
 }
 
@@ -399,11 +431,17 @@ a {
     font-size: 34px;
     color: #173c32;
     margin-bottom: 14px;
+
+    font-weight: 800;
 }
 
 .about p {
-    color: #63716b;
+
+    /* DARKER */
+    color: #46534f;
+
     margin-bottom: 12px;
+    line-height: 1.8;
 }
 
 /* CONTACT */
@@ -427,11 +465,17 @@ a {
     color: #173c32;
     font-size: 30px;
     margin-bottom: 10px;
+
+    font-weight: 800;
 }
 
 .contact-box p {
-    color: #566860;
+
+    /* DARKER */
+    color: #46534f;
+
     margin-bottom: 18px;
+    line-height: 1.75;
 }
 
 .contact-email {
@@ -468,11 +512,17 @@ a {
     color: #173c32;
     font-size: 30px;
     margin-bottom: 10px;
+
+    font-weight: 800;
 }
 
 .cta-box p {
-    color: #566860;
+
+    /* DARKER */
+    color: #46534f;
+
     margin-bottom: 20px;
+    line-height: 1.75;
 }
 
 /* FOOTER */
@@ -574,6 +624,7 @@ footer {
 
     .hero p {
         font-size: 16px;
+        line-height: 1.75;
     }
 
     .topic-grid {
@@ -631,6 +682,13 @@ footer {
 
     .contact-box {
         padding: 28px 18px;
+    }
+
+    .article-card p,
+    .about p,
+    .contact-box p,
+    .cta-box p {
+        line-height: 1.8;
     }
 
 }
