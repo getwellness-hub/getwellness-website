@@ -9,7 +9,7 @@
 <title>Wellness & Relationships | Practical Guides for Better Living</title>
 
 <meta name="description"
-      content="Practical guides about communication, relationships, marriage, consent and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
+      content="Practical guides about communication, relationships, marriage, consent, privacy and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
 
 <meta name="robots" content="index, follow">
 
@@ -20,7 +20,7 @@
       content="Wellness & Relationships">
 
 <meta property="og:description"
-      content="Practical guides for healthier relationships, communication, consent, marriage and wellness.">
+      content="Practical guides for healthier relationships, communication, consent, marriage, privacy and wellness.">
 
 <meta property="og:type" content="website">
 
@@ -60,7 +60,7 @@ a {
     color: inherit;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 .topbar {
     background: #ffffff;
@@ -81,7 +81,7 @@ a {
     gap: 20px;
 }
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .brand {
     display: flex;
@@ -125,7 +125,7 @@ a {
     color: #2f8f6b;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero {
     max-width: 1120px;
@@ -203,7 +203,7 @@ a {
     border-color: #2f8f6b;
 }
 
-/* HERO CARD */
+/* ================= HERO CARD ================= */
 
 .hero-card {
     background: #173c32;
@@ -233,7 +233,7 @@ a {
     font-size: 15px;
 }
 
-/* SEARCH */
+/* ================= SEARCH ================= */
 
 .search-section {
     max-width: 1120px;
@@ -267,7 +267,38 @@ a {
     background: transparent;
 }
 
-/* SECTIONS */
+.clear-search {
+    border: none;
+    background: transparent;
+    color: #587068;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px 12px;
+    display: none;
+}
+
+.clear-search:hover {
+    color: #2f8f6b;
+}
+
+.search-message {
+    display: none;
+    margin-top: 15px;
+    padding: 16px;
+    text-align: center;
+    background: white;
+    border: 1px solid #e1e9e5;
+    border-radius: 12px;
+    color: #66756f;
+}
+
+.search-active .article-card,
+.search-active .topic {
+    transition: .2s ease;
+}
+
+/* ================= SECTIONS ================= */
 
 .section {
     max-width: 1120px;
@@ -289,7 +320,7 @@ a {
     color: #697771;
 }
 
-/* TOPICS */
+/* ================= TOPICS ================= */
 
 .topic-grid {
     display: grid;
@@ -323,7 +354,7 @@ a {
     font-size: 14px;
 }
 
-/* ARTICLES */
+/* ================= ARTICLES ================= */
 
 .article-grid {
     display: grid;
@@ -377,7 +408,7 @@ a {
     font-size: 14px;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about {
     background: white;
@@ -406,7 +437,7 @@ a {
     margin-bottom: 12px;
 }
 
-/* CTA */
+/* ================= CTA ================= */
 
 .cta {
     max-width: 1120px;
@@ -432,7 +463,7 @@ a {
     margin-bottom: 20px;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer {
     background: #173c32;
@@ -490,7 +521,7 @@ footer {
     font-size: 13px;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 @media (max-width: 800px) {
 
@@ -591,7 +622,7 @@ footer {
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header class="topbar">
 
@@ -623,7 +654,7 @@ footer {
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
@@ -684,7 +715,7 @@ footer {
 </section>
 
 
-<!-- SEARCH -->
+<!-- ================= SEARCH ================= -->
 
 <section class="search-section">
 
@@ -695,15 +726,32 @@ footer {
         <input
             type="search"
             id="articleSearch"
-            placeholder="Search articles..."
-            aria-label="Search articles">
+            placeholder="Search articles or topics..."
+            aria-label="Search articles and topics"
+            autocomplete="off">
 
+        <button
+            type="button"
+            id="clearSearch"
+            class="clear-search"
+            aria-label="Clear search">
+            ×
+        </button>
+
+    </div>
+
+    <div
+        id="searchMessage"
+        class="search-message">
+        No matching articles or topics found.
+        Try Communication, Relationships, Marriage,
+        Consent, Privacy or Wellness.
     </div>
 
 </section>
 
 
-<!-- TOPICS -->
+<!-- ================= TOPICS ================= -->
 
 <section class="section" id="topics">
 
@@ -718,31 +766,65 @@ footer {
     </div>
 
 
-    <div class="topic-grid">
+    <div class="topic-grid" id="topicGrid">
 
-        <a class="topic" href="#articles">
+        <a
+            class="topic searchable-topic"
+            href="#articles"
+            data-search="communication communication skills talking listening conversation">
+
             <div class="topic-icon">💬</div>
+
             <strong>Communication</strong>
+
         </a>
 
-        <a class="topic" href="#articles">
+
+        <a
+            class="topic searchable-topic"
+            href="#articles"
+            data-search="relationships relationship healthy relationship trust respect emotional support">
+
             <div class="topic-icon">❤️</div>
+
             <strong>Relationships</strong>
+
         </a>
 
-        <a class="topic" href="#articles">
+
+        <a
+            class="topic searchable-topic"
+            href="#articles"
+            data-search="marriage married husband wife family partnership">
+
             <div class="topic-icon">💍</div>
+
             <strong>Marriage</strong>
+
         </a>
 
-        <a class="topic" href="#articles">
+
+        <a
+            class="topic searchable-topic"
+            href="#articles"
+            data-search="consent mutual consent boundaries respect communication">
+
             <div class="topic-icon">🤝</div>
+
             <strong>Consent</strong>
+
         </a>
 
-        <a class="topic" href="#articles">
+
+        <a
+            class="topic searchable-topic"
+            href="#articles"
+            data-search="sexual wellness sexual health wellness wellbeing healthy choices">
+
             <div class="topic-icon">🌱</div>
+
             <strong>Sexual Wellness</strong>
+
         </a>
 
     </div>
@@ -750,7 +832,7 @@ footer {
 </section>
 
 
-<!-- ARTICLES -->
+<!-- ================= ARTICLES ================= -->
 
 <section class="section" id="articles">
 
@@ -766,9 +848,14 @@ footer {
     </div>
 
 
-    <div class="article-grid">
+    <div class="article-grid" id="articleGrid">
 
-        <article class="article-card">
+
+        <!-- COMMUNICATION -->
+
+        <article
+            class="article-card searchable-article"
+            data-search="communication healthy communication relationship talking listening conversation communication skills">
 
             <div class="article-label">
                 Communication
@@ -792,7 +879,11 @@ footer {
         </article>
 
 
-        <article class="article-card">
+        <!-- CONSENT -->
+
+        <article
+            class="article-card searchable-article"
+            data-search="consent healthy consent mutual consent boundaries respect communication safety">
 
             <div class="article-label">
                 Consent
@@ -816,7 +907,11 @@ footer {
         </article>
 
 
-        <article class="article-card">
+        <!-- MARRIAGE -->
+
+        <article
+            class="article-card searchable-article"
+            data-search="marriage married husband wife family partnership relationship communication trust">
 
             <div class="article-label">
                 Marriage
@@ -840,7 +935,11 @@ footer {
         </article>
 
 
-        <article class="article-card">
+        <!-- PRIVACY -->
+
+        <article
+            class="article-card searchable-article"
+            data-search="privacy personal privacy boundaries personal space online privacy safety security relationship">
 
             <div class="article-label">
                 Privacy
@@ -863,7 +962,11 @@ footer {
         </article>
 
 
-        <article class="article-card">
+        <!-- SEXUAL WELLNESS -->
+
+        <article
+            class="article-card searchable-article"
+            data-search="sexual wellness sexual health wellbeing healthy choices respect communication privacy">
 
             <div class="article-label">
                 Sexual Wellness
@@ -886,7 +989,11 @@ footer {
         </article>
 
 
-        <article class="article-card">
+        <!-- WELLNESS -->
+
+        <article
+            class="article-card searchable-article"
+            data-search="wellness wellbeing self care health mental physical emotional healthy living">
 
             <div class="article-label">
                 Wellness
@@ -909,12 +1016,13 @@ footer {
 
         </article>
 
+
     </div>
 
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= ABOUT ================= -->
 
 <section class="about" id="about">
 
@@ -967,7 +1075,7 @@ footer {
 </section>
 
 
-<!-- CTA -->
+<!-- ================= CTA ================= -->
 
 <section class="cta">
 
@@ -992,7 +1100,7 @@ footer {
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -1048,37 +1156,162 @@ footer {
 </footer>
 
 
-<!-- SEARCH SCRIPT -->
+<!-- ================= SEARCH JAVASCRIPT ================= -->
 
 <script>
 
-const searchInput =
-    document.getElementById("articleSearch");
+document.addEventListener("DOMContentLoaded", function () {
 
-const articles =
-    document.querySelectorAll(".article-card");
+    const searchInput =
+        document.getElementById("articleSearch");
 
-searchInput.addEventListener("input", function () {
+    const clearButton =
+        document.getElementById("clearSearch");
 
-    const query =
-        this.value.toLowerCase().trim();
+    const searchMessage =
+        document.getElementById("searchMessage");
 
-    articles.forEach(function (article) {
+    const articles =
+        Array.from(
+            document.querySelectorAll(".searchable-article")
+        );
 
-        const text =
-            article.textContent.toLowerCase();
+    const topics =
+        Array.from(
+            document.querySelectorAll(".searchable-topic")
+        );
 
-        if (text.includes(query)) {
 
-            article.style.display = "";
+    function performSearch() {
+
+        const query =
+            searchInput.value
+            .trim()
+            .toLowerCase();
+
+
+        let articleFound = false;
+        let topicFound = false;
+
+
+        /* SEARCH ARTICLES */
+
+        articles.forEach(function (article) {
+
+            const text =
+                (
+                    article.innerText +
+                    " " +
+                    (article.dataset.search || "")
+                ).toLowerCase();
+
+
+            if (
+                query === "" ||
+                text.includes(query)
+            ) {
+
+                article.style.display = "";
+
+                if (query !== "") {
+                    articleFound = true;
+                }
+
+            } else {
+
+                article.style.display = "none";
+
+            }
+
+        });
+
+
+        /* SEARCH TOPICS */
+
+        topics.forEach(function (topic) {
+
+            const text =
+                (
+                    topic.innerText +
+                    " " +
+                    (topic.dataset.search || "")
+                ).toLowerCase();
+
+
+            if (
+                query === "" ||
+                text.includes(query)
+            ) {
+
+                topic.style.display = "";
+
+                if (query !== "") {
+                    topicFound = true;
+                }
+
+            } else {
+
+                topic.style.display = "none";
+
+            }
+
+        });
+
+
+        /* CLEAR BUTTON */
+
+        if (query !== "") {
+
+            clearButton.style.display = "block";
 
         } else {
 
-            article.style.display = "none";
+            clearButton.style.display = "none";
 
         }
 
-    });
+
+        /* NO RESULTS MESSAGE */
+
+        if (
+            query !== "" &&
+            !articleFound &&
+            !topicFound
+        ) {
+
+            searchMessage.style.display = "block";
+
+        } else {
+
+            searchMessage.style.display = "none";
+
+        }
+
+    }
+
+
+    /* LIVE SEARCH */
+
+    searchInput.addEventListener(
+        "input",
+        performSearch
+    );
+
+
+    /* CLEAR SEARCH */
+
+    clearButton.addEventListener(
+        "click",
+        function () {
+
+            searchInput.value = "";
+
+            performSearch();
+
+            searchInput.focus();
+
+        }
+    );
 
 });
 
