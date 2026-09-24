@@ -1,75 +1,849 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Protecting Intimate Privacy Online | Wellness & Relationships</title>
+<title>Protecting Personal Privacy | Wellness & Relationships</title>
 
-<meta name="description" content="Learn practical ways to protect intimate photos, messages, accounts and sensitive information online while respecting privacy and consent.">
+<meta name="description" content="Learn practical ways to protect personal privacy, respect boundaries, communicate clearly, and build trust in healthy relationships.">
+
+<meta name="robots" content="index, follow">
 
 <link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/article-privacy.html">
 
-<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="Protecting Personal Privacy">
+<meta property="og:description" content="Practical guidance for understanding privacy, personal boundaries and trust in relationships.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://getwellness-hub.github.io/getwellness-website/article-privacy.html">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Protecting Personal Privacy">
+<meta name="twitter:description" content="Learn how privacy and healthy boundaries can strengthen relationships.">
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f8f7;
+    color:#263238;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    border-bottom:1px solid #e4ece9;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav{
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:800;
+    color:#155e55;
+}
+
+.logo span{
+    color:#2f8f83;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    font-size:14px;
+    color:#536662;
+}
+
+.nav-links a:hover{
+    color:#16796b;
+}
+
+/* MAIN */
+
+.container{
+    max-width:850px;
+    margin:auto;
+    padding:30px 18px 60px;
+}
+
+.breadcrumb{
+    font-size:13px;
+    color:#70827e;
+    margin-bottom:18px;
+}
+
+.breadcrumb a{
+    color:#19796d;
+}
+
+/* ARTICLE */
+
+.article-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 8px 30px rgba(20,60,50,.07);
+}
+
+.article-label{
+    display:inline-block;
+    background:#e6f5f1;
+    color:#187568;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+h1{
+    font-size:42px;
+    line-height:1.15;
+    margin:0 0 15px;
+    color:#173d38;
+}
+
+.intro{
+    font-size:18px;
+    color:#61736f;
+    margin-bottom:30px;
+}
+
+h2{
+    color:#185e55;
+    font-size:25px;
+    margin-top:35px;
+    margin-bottom:12px;
+}
+
+h3{
+    color:#246d64;
+    font-size:19px;
+}
+
+p{
+    margin:10px 0 16px;
+}
+
+ul{
+    padding-left:22px;
+}
+
+li{
+    margin:7px 0;
+}
+
+/* TIP */
+
+.tip{
+    background:#e9f7f2;
+    border-left:5px solid #43a795;
+    padding:18px 20px;
+    border-radius:10px;
+    margin:25px 0;
+}
+
+.tip strong{
+    color:#17695f;
+}
+
+/* TAKEAWAYS */
+
+.takeaways{
+    background:#f0f7f5;
+    border-radius:14px;
+    padding:22px;
+    margin-top:35px;
+}
+
+.takeaways h2{
+    margin-top:0;
+}
+
+.takeaways li{
+    margin-bottom:8px;
+}
+
+/* NAVIGATION */
+
+.article-nav{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-top:35px;
+}
+
+.nav-card{
+    background:#ffffff;
+    border:1px solid #e0ebe8;
+    border-radius:14px;
+    padding:18px;
+    transition:.2s;
+}
+
+.nav-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(20,60,50,.08);
+}
+
+.nav-card small{
+    color:#78908b;
+    display:block;
+    margin-bottom:5px;
+}
+
+.nav-card strong{
+    color:#1b6259;
+}
+
+/* RELATED */
+
+.related{
+    margin-top:40px;
+}
+
+.related-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.related-card{
+    background:#ffffff;
+    border:1px solid #e0ebe8;
+    border-radius:14px;
+    padding:18px;
+    transition:.2s;
+}
+
+.related-card:hover{
+    transform:translateY(-3px);
+}
+
+.related-card small{
+    color:#2c8b7c;
+    font-weight:700;
+}
+
+.related-card h3{
+    margin:8px 0;
+    font-size:17px;
+}
+
+.related-card p{
+    font-size:13px;
+    color:#71807d;
+}
+
+/* FOOTER */
+
+footer{
+    background:#123c37;
+    color:#dcece8;
+    margin-top:40px;
+}
+
+.footer-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer-title{
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.footer-title span{
+    color:#72c5b6;
+}
+
+footer p{
+    color:#b8d0ca;
+    font-size:14px;
+}
+
+footer h3{
+    color:#ffffff;
+    font-size:15px;
+}
+
+footer a{
+    display:block;
+    color:#b8d0ca;
+    font-size:14px;
+    margin:7px 0;
+}
+
+footer a:hover{
+    color:#ffffff;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;
+    padding:18px;
+    color:#9fbbb5;
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .nav{
+        padding:13px 15px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .container{
+        padding:22px 12px 45px;
+    }
+
+    .article-card{
+        padding:23px 18px;
+        border-radius:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .intro{
+        font-size:16px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    .article-nav{
+        grid-template-columns:1fr;
+    }
+
+    .related-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:32px 20px;
+    }
+}
+
+</style>
 </head>
+
 
 <body>
 
-<header class="topbar">
-  <div class="wrap nav">
+<header>
 
-    <a class="brand" href="index.html">
-      Wellness<span>&</span>Relationships
-    </a>
+<nav class="nav">
 
-    <nav>
-      <a href="index.html#topics">Topics</a>
-      <a href="index.html#articles">Articles</a>
-    </nav>
+<a href="index.html" class="logo">
+Wellness <span>&amp; Relationships</span>
+</a>
 
-  </div>
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+
+<a href="article-communication.html">Articles</a>
+
+<a href="article-consent.html">Consent</a>
+
+<a href="article-marriage.html">Marriage</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
 </header>
 
-<main class="wrap section">
 
-  <p class="eyebrow">PRIVACY</p>
+<main class="container">
 
-  <h1>Protecting intimate privacy online</h1>
 
-  <div class="article" style="max-width:820px;margin-top:30px;">
+<div class="breadcrumb">
 
-    <p>
-      Treat intimate photos and messages as highly private
-      information. Share them only when you understand the
-      risks and have clear consent from everyone involved.
-    </p>
+<a href="index.html">Home</a>
+&nbsp;›&nbsp;
+<a href="index.html">Relationships</a>
+&nbsp;›&nbsp;
+Privacy
 
-    <p>
-      Use unique passwords and two-factor authentication,
-      keep your phone and apps updated, and review which apps
-      can access photos, files or your camera.
-    </p>
+</div>
 
-    <p>
-      Never forward another person's intimate material without
-      their permission. If private material has been shared
-      without consent, document what happened and consider
-      reporting it to the relevant platform or authorities.
-    </p>
 
-    <p>
-      Digital privacy is an ongoing habit: think before sharing,
-      limit access, and keep sensitive files out of public or
-      shared accounts.
-    </p>
+<article class="article-card">
 
-    <p>
-      <a href="index.html">← Back to home</a>
-    </p>
 
-  </div>
+<span class="article-label">
+PRIVACY &amp; BOUNDARIES
+</span>
+
+
+<h1>
+Protecting Personal Privacy
+</h1>
+
+
+<p class="intro">
+Privacy is an important part of healthy relationships.
+Being close to someone does not mean giving up personal space,
+private information or individual boundaries.
+</p>
+
+
+<h2>1. Understand What Privacy Means</h2>
+
+<p>
+Privacy means having reasonable control over your personal
+information, communication, belongings, time and personal space.
+</p>
+
+<p>
+Different people can have different comfort levels around privacy.
+Healthy relationships make room for those differences.
+</p>
+
+
+<div class="tip">
+
+<strong>Remember:</strong><br>
+
+Trust does not require constant access to another person's
+private information. Trust can grow through honesty, respect
+and consistent behavior.
+
+</div>
+
+
+<h2>2. Respect Personal Boundaries</h2>
+
+<p>
+A boundary communicates what a person is comfortable with and
+what they are not comfortable with.
+</p>
+
+<ul>
+
+<li>Respect personal space.</li>
+
+<li>Ask before using someone else's belongings.</li>
+
+<li>Respect private conversations.</li>
+
+<li>Accept reasonable requests for alone time.</li>
+
+<li>Do not pressure someone to share information.</li>
+
+</ul>
+
+
+<h2>3. Privacy Does Not Mean Secrecy</h2>
+
+<p>
+Privacy and secrecy are not always the same thing.
+Everyone can have personal space while still being honest
+about important matters that affect the relationship.
+</p>
+
+<p>
+Healthy privacy allows individuality. Harmful secrecy can involve
+deliberately hiding information that another person reasonably
+needs to know.
+</p>
+
+
+<h2>4. Protect Digital Privacy</h2>
+
+<p>
+Phones, social media accounts, emails and personal devices can
+contain sensitive information.
+Respecting digital privacy is an important part of modern relationships.
+</p>
+
+<ul>
+
+<li>Do not access another person's account without permission.</li>
+
+<li>Do not read private messages without consent.</li>
+
+<li>Do not share private photos or conversations without permission.</li>
+
+<li>Use strong passwords for your own accounts.</li>
+
+<li>Be careful about what personal information you share online.</li>
+
+</ul>
+
+
+<h2>5. Talk About Privacy Expectations</h2>
+
+<p>
+Couples may have different expectations about phones, social media,
+friends, finances and personal time.
+</p>
+
+<p>
+Instead of assuming that both people have the same expectations,
+talk about them openly.
+</p>
+
+<h3>Useful questions include:</h3>
+
+<ul>
+
+<li>What information do we consider private?</li>
+
+<li>How do we feel about sharing things on social media?</li>
+
+<li>How much personal time does each person need?</li>
+
+<li>Which belongings require permission before using?</li>
+
+<li>What digital boundaries feel comfortable for both of us?</li>
+
+</ul>
+
+
+<h2>6. Avoid Controlling Behavior</h2>
+
+<p>
+Healthy relationships allow people to maintain reasonable independence.
+Constantly demanding passwords, tracking someone's location without
+agreement, monitoring communications or restricting friendships can
+create unhealthy control.
+</p>
+
+<p>
+A relationship can have agreed boundaries without removing a person's
+basic independence.
+</p>
+
+
+<h2>7. Respect Confidential Information</h2>
+
+<p>
+People may share personal information with their partner because they
+trust them.
+That information should normally be treated with care.
+</p>
+
+<ul>
+
+<li>Think before sharing private information with others.</li>
+
+<li>Do not use someone's vulnerability against them.</li>
+
+<li>Ask permission before sharing private photos or stories.</li>
+
+<li>Be especially careful with sensitive personal information.</li>
+
+</ul>
+
+
+<h2>8. Privacy During Conflict</h2>
+
+<p>
+Arguments can create strong emotions, but private information should
+not become a weapon during disagreements.
+</p>
+
+<p>
+Avoid threatening to expose private messages, photographs or personal
+stories simply to hurt or pressure another person.
+</p>
+
+
+<h2>9. Maintain Your Own Identity</h2>
+
+<p>
+Healthy relationships can include shared goals while still allowing
+each person to have individual interests, friendships, responsibilities
+and personal time.
+</p>
+
+<p>
+Maintaining healthy independence can help both partners continue
+developing as individuals.
+</p>
+
+
+<h2>10. Build Privacy Through Mutual Respect</h2>
+
+<p>
+Privacy works best when both people follow the same basic principle:
+respect the other person's boundaries while communicating your own.
+</p>
+
+<p>
+When people feel respected, they may find it easier to communicate
+openly and build trust.
+</p>
+
+
+<div class="takeaways">
+
+<h2>Key Takeaways</h2>
+
+<ul>
+
+<li>Privacy is a normal part of healthy relationships.</li>
+
+<li>Personal boundaries should be communicated and respected.</li>
+
+<li>Digital privacy matters as much as physical privacy.</li>
+
+<li>Privacy and secrecy are not automatically the same thing.</li>
+
+<li>Important privacy expectations should be discussed openly.</li>
+
+<li>Controlling behavior is different from healthy relationship boundaries.</li>
+
+<li>Private information should be treated with care and respect.</li>
+
+<li>Healthy relationships allow both people to maintain reasonable independence.</li>
+
+</ul>
+
+</div>
+
+
+</article>
+
+
+<!-- PREVIOUS / NEXT -->
+
+<div class="article-nav">
+
+
+<a href="article-marriage.html" class="nav-card">
+
+<small>
+← Previous Article
+</small>
+
+<strong>
+Building a Healthy Marriage
+</strong>
+
+</a>
+
+
+<a href="article-sexual-wellness.html" class="nav-card">
+
+<small>
+Next Article →
+</small>
+
+<strong>
+Sexual Wellness &amp; Healthy Relationships
+</strong>
+
+</a>
+
+
+</div>
+
+
+<!-- RELATED ARTICLES -->
+
+<section class="related">
+
+
+<h2>
+Related Articles
+</h2>
+
+
+<div class="related-grid">
+
+
+<a href="article-communication.html" class="related-card">
+
+<small>
+COMMUNICATION
+</small>
+
+<h3>
+How to Communicate Better With Your Partner
+</h3>
+
+<p>
+Practical communication habits for healthier and more respectful
+relationships.
+</p>
+
+</a>
+
+
+<a href="article-consent.html" class="related-card">
+
+<small>
+CONSENT
+</small>
+
+<h3>
+What Healthy Consent Looks Like
+</h3>
+
+<p>
+Understand why consent should be voluntary, informed and respected.
+</p>
+
+</a>
+
+
+<a href="article-marriage.html" class="related-card">
+
+<small>
+MARRIAGE
+</small>
+
+<h3>
+Building a Healthy Marriage
+</h3>
+
+<p>
+Learn practical ways to build trust, communication and emotional
+connection.
+</p>
+
+</a>
+
+
+</div>
+
+</section>
+
 
 </main>
+
+
+<footer>
+
+
+<div class="footer-inner">
+
+
+<div>
+
+<div class="footer-title">
+Wellness <span>&amp; Relationships</span>
+</div>
+
+<p>
+Practical information for better communication,
+healthy relationships, personal wellbeing and
+respectful connections.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Explore
+</h3>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="article-communication.html">
+Articles
+</a>
+
+<a href="article-consent.html">
+Consent
+</a>
+
+<a href="article-marriage.html">
+Marriage
+</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Information
+</h3>
+
+<a href="contact.html">
+Contact
+</a>
+
+<a href="article-privacy.html">
+Privacy
+</a>
+
+<a href="terms.html">
+Terms
+</a>
+
+<a href="sitemap.xml">
+Sitemap
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Wellness &amp; Relationships. All rights reserved.
+
+</div>
+
+
+</footer>
+
 
 </body>
 </html>
