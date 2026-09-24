@@ -1,411 +1,1088 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Educational resources for relationships, wellness, consent, privacy, communication, marriage and healthy relationships.">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-<title>Wellness & Relationships | Consent, Privacy & Healthy Relationships</title>
+<title>Wellness & Relationships | Practical Guides for Better Living</title>
 
-<link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/">
+<meta name="description"
+      content="Practical guides about communication, relationships, marriage, consent and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
 
 <meta name="robots" content="index, follow">
 
-<link rel="stylesheet" href="style.css">
+<link rel="canonical"
+      href="https://getwellness-hub.github.io/getwellness-website/">
 
-<meta name="google-site-verification" content="nVSOKW91EbHWJjqJS8IdgOZfdWrxwaRym3FFRRF8Rcs">
+<meta property="og:title"
+      content="Wellness & Relationships">
 
+<meta property="og:description"
+      content="Practical guides for healthier relationships, communication, consent, marriage and wellness.">
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:url"
+      content="https://getwellness-hub.github.io/getwellness-website/">
+
+<meta name="twitter:card"
+      content="summary">
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background: #f7faf9;
+    color: #17201d;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.topbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5ebe8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    max-width: 1120px;
+    margin: auto;
+    padding: 16px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 800;
+    color: #173c32;
+}
+
+.brand span {
+    color: #2f8f6b;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #43534d;
+}
+
+.nav-links a:hover {
+    color: #2f8f6b;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 75px 20px 55px;
+
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: #e3f3ec;
+    color: #27775a;
+    padding: 7px 13px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    color: #173c32;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2f8f6b;
+}
+
+.hero p {
+    max-width: 680px;
+    font-size: 18px;
+    color: #596862;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 21px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .2s ease;
+}
+
+.btn-primary {
+    background: #2f8f6b;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #247554;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: white;
+    color: #245c49;
+    border: 1px solid #d8e4df;
+}
+
+.btn-secondary:hover {
+    border-color: #2f8f6b;
+}
+
+/* HERO CARD */
+
+.hero-card {
+    background: #173c32;
+    color: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 50px rgba(23,60,50,.15);
+}
+
+.hero-card .icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-card h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #d7e7e1;
+    font-size: 15px;
+}
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px 20px 35px;
+}
+
+.search-box {
+    background: white;
+    border: 1px solid #e1e9e5;
+    border-radius: 15px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(30,70,55,.05);
+}
+
+.search-box span {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px 5px;
+    background: transparent;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+    max-width: 1120px;
+    margin: auto;
+    padding: 55px 20px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: #173c32;
+    margin-bottom: 6px;
+}
+
+.section-heading p {
+    color: #697771;
+}
+
+/* =========================
+   TOPICS
+========================= */
+
+.topic-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(5, 1fr);
+    gap: 14px;
+}
+
+.topic {
+    background: white;
+    border: 1px solid #e2ebe7;
+    border-radius: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    transition: .2s ease;
+}
+
+.topic:hover {
+    transform: translateY(-4px);
+    border-color: #9acbb8;
+    box-shadow: 0 10px 25px rgba(30,70,55,.08);
+}
+
+.topic-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.topic strong {
+    display: block;
+    color: #23483c;
+    font-size: 14px;
+}
+
+/* =========================
+   ARTICLES
+========================= */
+
+.article-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 20px;
+}
+
+.article-card {
+    background: white;
+    border: 1px solid #e1e9e5;
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: .2s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(30,70,55,.08);
+}
+
+.article-label {
+    font-size: 12px;
+    font-weight: 800;
+    color: #2f8f6b;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+}
+
+.article-card h3 {
+    font-size: 21px;
+    line-height: 1.3;
+    color: #173c32;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    color: #65736d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.article-card .read {
+    margin-top: auto;
+    color: #2f8f6b;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+    border-top: 1px solid #e6ece9;
+    border-bottom: 1px solid #e6ece9;
+}
+
+.about-inner {
+    max-width: 1120px;
+    margin: auto;
+    padding: 60px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.about h2 {
+    font-size: 34px;
+    color: #173c32;
+    margin-bottom: 14px;
+}
+
+.about p {
+    color: #63716b;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    max-width: 1120px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.cta-box {
+    background: #e3f3ec;
+    border-radius: 22px;
+    padding: 38px;
+    text-align: center;
+}
+
+.cta-box h2 {
+    color: #173c32;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cta-box p {
+    color: #566860;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #173c32;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-inner {
+    max-width: 1120px;
+    margin: auto;
+    padding: 45px 20px 25px;
+
+    display: grid;
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer-brand span {
+    color: #8bd2b3;
+}
+
+.footer p {
+    color: #c7d8d1;
+    font-size: 14px;
+}
+
+.footer h3 {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.footer a {
+    display: block;
+    color: #c7d8d1;
+    font-size: 14px;
+    margin: 7px 0;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.copyright {
+    max-width: 1120px;
+    margin: auto;
+    border-top: 1px solid rgba(255,255,255,.12);
+    padding: 18px 20px;
+    color: #b7c9c1;
+    font-size: 13px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav {
+        padding: 14px 16px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 48px;
+    }
+
+    .hero-card {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .topic-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav-links a:nth-child(2) {
+        display: none;
+    }
+
+    .hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .section,
+    .search-section,
+    .cta {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .topic-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .cta-box {
+        padding: 28px 18px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header class="topbar">
 
-<div class="wrap nav">
+    <div class="nav">
 
-<a class="brand" href="index.html">
-Wellness<span>&</span>Relationships
-</a>
+        <a href="index.html" class="brand">
+            Wellness<span>&</span>Relationships
+        </a>
 
-<button class="menu" aria-label="Open menu">☰</button>
+        <nav class="nav-links">
+            <a href="#topics">Topics</a>
+            <a href="#articles">Articles</a>
+            <a href="#about">About</a>
+        </nav>
 
-<nav>
-<a href="#topics">Topics</a>
-<a href="#articles">Articles</a>
-<a href="#about">About</a>
-<a href="article-privacy.html">Privacy</a>
-<a href="terms.html">Terms</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-</div>
+    </div>
 
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
-<div class="wrap hero-grid">
+    <div>
 
-<div>
+        <span class="hero-tag">
+            WELLNESS • RELATIONSHIPS • BETTER LIVING
+        </span>
 
-<p class="eyebrow">
-PRIVATE • EDUCATIONAL • RESPECTFUL
-</p>
+        <h1>
+            Better relationships
+            <span>start with better understanding.</span>
+        </h1>
 
-<h1>
-Better relationships start with better information.
-</h1>
+        <p>
+            Simple, practical and easy-to-understand guides
+            about communication, relationships, marriage,
+            consent and personal wellness.
+        </p>
 
-<p class="lead">
-Clear, practical articles about communication, consent, sexual wellness, marriage, privacy and healthy relationships.
-</p>
+        <div class="hero-buttons">
 
-<div class="buttons">
+            <a href="#articles"
+               class="btn btn-primary">
+                Explore Articles
+            </a>
 
-<a class="btn primary" href="#articles">
-Explore articles
-</a>
+            <a href="#topics"
+               class="btn btn-secondary">
+                Browse Topics
+            </a>
 
-<a class="btn secondary" href="#topics">
-Browse topics
-</a>
+        </div>
 
-</div>
-
-</div>
-
-
-<div class="hero-card">
-
-<div class="card-icon">♡</div>
-
-<h3>
-Knowledge without judgment
-</h3>
-
-<p>
-Simple educational information for adults. No explicit images or pornography.
-</p>
-
-</div>
-
-</div>
-
-</section>
+    </div>
 
 
-<main>
+    <div class="hero-card">
 
+        <div class="icon">🌿</div>
 
-<section id="topics" class="wrap section">
+        <h2>
+            Learn. Understand. Grow.
+        </h2>
 
-<div class="section-head">
+        <p>
+            Explore practical information designed to
+            help you communicate better, understand
+            healthy boundaries and build stronger
+            relationships.
+        </p>
 
-<p class="eyebrow">
-EXPLORE
-</p>
-
-<h2>
-Topics
-</h2>
-
-</div>
-
-
-<div class="cards">
-
-
-<article>
-
-<span>♥</span>
-
-<h3>
-Relationships
-</h3>
-
-<p>
-Trust, communication, boundaries and emotional connection.
-</p>
-
-<a href="article-communication.html">
-Read relationship article →
-</a>
-
-</article>
-
-
-<article>
-
-<span>✓</span>
-
-<h3>
-Consent & Privacy
-</h3>
-
-<p>
-Understand consent, digital privacy and respectful behavior.
-</p>
-
-<p>
-<a href="article-consent.html">
-Healthy consent →
-</a>
-</p>
-
-<p>
-<a href="article-privacy.html">
-Online privacy →
-</a>
-</p>
-
-</article>
-
-
-<article>
-
-<span>+</span>
-
-<h3>
-Sexual Wellness
-</h3>
-
-<p>
-Practical educational information about communication, boundaries, wellbeing and safer choices.
-</p>
-
-<a href="article-sexual-wellness.html">
-Read sexual wellness guide →
-</a>
-
-</article>
-
-
-<article>
-
-<span>∞</span>
-
-<h3>
-Marriage
-</h3>
-
-<p>
-Practical ideas for communication, intimacy, trust and conflict resolution.
-</p>
-
-<a href="article-marriage.html">
-Read marriage article →
-</a>
-
-</article>
-
-
-</div>
+    </div>
 
 </section>
 
 
-<section id="articles" class="wrap section">
+<!-- SEARCH -->
 
-<div class="section-head">
+<section class="search-section">
 
-<p class="eyebrow">
-LATEST
-</p>
+    <div class="search-box">
 
-<h2>
-Featured articles
-</h2>
+        <span>🔎</span>
 
-</div>
+        <input
+            type="search"
+            id="articleSearch"
+            placeholder="Search articles..."
+            aria-label="Search articles">
 
-
-<div class="articles">
-
-
-<article class="article">
-
-<p class="tag">
-RELATIONSHIPS
-</p>
-
-<h3>
-How to communicate better with your partner
-</h3>
-
-<p>
-Practical ways to listen, express needs clearly and reduce unnecessary conflict.
-</p>
-
-<a href="article-communication.html">
-Read article →
-</a>
-
-</article>
-
-
-<article class="article">
-
-<p class="tag">
-CONSENT
-</p>
-
-<h3>
-What healthy consent looks like
-</h3>
-
-<p>
-A straightforward guide to voluntary, informed and ongoing consent.
-</p>
-
-<a href="article-consent.html">
-Read article →
-</a>
-
-</article>
-
-
-<article class="article">
-
-<p class="tag">
-PRIVACY
-</p>
-
-<h3>
-Protecting intimate privacy online
-</h3>
-
-<p>
-Basic steps for passwords, private media, permissions and safer sharing.
-</p>
-
-<a href="article-privacy.html">
-Read article →
-</a>
-
-</article>
-
-
-<article class="article">
-
-<p class="tag">
-SEXUAL WELLNESS
-</p>
-
-<h3>
-Understanding sexual wellness
-</h3>
-
-<p>
-A practical guide to communication, consent, boundaries, emotional wellbeing and informed choices.
-</p>
-
-<a href="article-sexual-wellness.html">
-Read article →
-</a>
-
-</article>
-
-
-<article class="article">
-
-<p class="tag">
-MARRIAGE
-</p>
-
-<h3>
-Building a strong marriage
-</h3>
-
-<p>
-Practical guidance on communication, trust, financial conversations and healthy conflict resolution.
-</p>
-
-<a href="article-marriage.html">
-Read article →
-</a>
-
-</article>
-
-
-</div>
+    </div>
 
 </section>
 
 
-<section id="about" class="about">
+<!-- TOPICS -->
 
-<div class="wrap">
+<section class="section" id="topics">
 
-<p class="eyebrow">
-ABOUT
-</p>
+    <div class="section-heading">
 
-<h2>
-Useful information, presented simply.
-</h2>
+        <h2>Explore Topics</h2>
 
-<p>
-This website is designed as an educational resource for adults. Content should be evidence-based, respectful and non-explicit. It is not a substitute for professional medical or psychological advice.
-</p>
+        <p>
+            Find practical information by topic.
+        </p>
 
-</div>
+    </div>
+
+
+    <div class="topic-grid">
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon">💬</div>
+            <strong>Communication</strong>
+
+        </a>
+
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon">❤️</div>
+            <strong>Relationships</strong>
+
+        </a>
+
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon">💍</div>
+            <strong>Marriage</strong>
+
+        </a>
+
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon">🤝</div>
+            <strong>Consent</strong>
+
+        </a>
+
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon">🌱</div>
+            <strong>Sexual Wellness</strong>
+
+        </a>
+
+    </div>
 
 </section>
 
 
-</main>
+<!-- ARTICLES -->
 
+<section class="section" id="articles">
+
+    <div class="section-heading">
+
+        <h2>Latest Guides</h2>
+
+        <p>
+            Practical articles written in a simple,
+            easy-to-understand format.
+        </p>
+
+    </div>
+
+
+    <div class="article-grid" id="articleGrid">
+
+
+        <article class="article-card">
+
+            <div class="article-label">
+                Communication
+            </div>
+
+            <h3>
+                How to Communicate Better With Your Partner
+            </h3>
+
+            <p>
+                Learn practical ways to listen effectively,
+                express feelings clearly and handle
+                difficult conversations.
+            </p>
+
+            <a class="read"
+               href="article-communication.html">
+                Read Article →
+            </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+            <div class="article-label">
+                Consent
+            </div>
+
+            <h3>
+                What Healthy Consent Looks Like
+            </h3>
+
+            <p>
+                Understand voluntary and informed consent,
+                personal boundaries and respectful
+                communication.
+            </p>
+
+            <a class="read"
+               href="article-consent.html">
+                Read Article →
+            </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+            <div class="article-label">
+                Marriage
+            </div>
+
+            <h3>
+                Building a Healthy Marriage
+            </h3>
+
+            <p>
+                Explore practical ideas for communication,
+                trust, understanding and long-term
+                relationship growth.
+            </p>
+
+            <a class="read"
+               href="article-marriage.html">
+                Read Article →
+            </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+            <div class="article-label">
+                Privacy
+            </div>
+
+            <h3>
+                Privacy & Personal Boundaries
+            </h3>
+
+            <p>
+                Learn why privacy, personal space and
+                healthy boundaries matter in relationships.
+            </p>
+
+            <a class="read"
+               href="article-privacy.html">
+                Read Article →
+            </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+            <div class="article-label">
+                Sexual Wellness
+            </div>
+
+            <h3>
+                Understanding Sexual Wellness
+            </h3>
+
+            <p>
+                Explore basic concepts around communication,
+                respect, wellbeing and healthy relationships.
+            </p>
+
+            <a class="read"
+               href="article-sexual-wellness.html">
+                Read Article →
+            </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+            <div class="article-label">
+                Wellness
+            </div>
+
+            <h3>
+                More Wellness Guides Coming Soon
+            </h3>
+
+            <p>
+                We are continuing to build a useful library
+                of practical wellness and relationship
+                information.
+            </p>
+
+            <a class="read"
+               href="#about">
+                Learn More →
+            </a>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="about-inner">
+
+        <div>
+
+            <h2>
+                About Wellness & Relationships
+            </h2>
+
+            <p>
+                Wellness & Relationships is a simple
+                information website focused on practical
+                topics that can help people better
+                understand communication, relationships,
+                consent and personal wellbeing.
+            </p>
+
+            <p>
+                Our goal is to make useful information
+                easier to understand and easier to apply
+                in everyday life.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                A Simple Approach
+            </h2>
+
+            <p>
+                Clear language. Practical ideas.
+                Respectful conversations.
+            </p>
+
+            <p>
+                Explore an article, learn something useful,
+                and take what is relevant to your own
+                situation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <div class="cta-box">
+
+        <h2>
+            Start Exploring
+        </h2>
+
+        <p>
+            Discover practical guides for healthier
+            communication and relationships.
+        </p>
+
+        <a href="#articles"
+           class="btn btn-primary">
+            View Articles
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
-<div class="wrap footer-grid">
-
-<div>
-
-<strong>
-Wellness & Relationships
-</strong>
-
-<p>
-Education • Respect • Privacy
-</p>
-
-</div>
+    <div class="footer-inner">
 
 
-<div>
+        <div>
 
-<a href="article-privacy.html">
-Privacy
-</a>
+            <div class="footer-brand">
+                Wellness<span>&</span>Relationships
+            </div>
 
-<a href="terms.html">
-Terms
-</a>
+            <p>
+                Practical information for better
+                communication, healthier relationships
+                and everyday wellbeing.
+            </p>
 
-<a href="contact.html">
-Contact
-</a>
-
-</div>
-
-</div>
+        </div>
 
 
-<div class="wrap copyright">
+        <div>
 
-© 2026 Wellness & Relationships. All rights reserved.
+            <h3>Explore</h3>
 
-</div>
+            <a href="#topics">Topics</a>
+            <a href="#articles">Articles</a>
+            <a href="#about">About</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Information</h3>
+
+            <a href="contact.html">Contact</a>
+            <a href="article-privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="sitemap.xml">Sitemap</a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Wellness & Relationships.
+        All rights reserved.
+
+    </div>
 
 </footer>
 
 
-<script src="script.js"></script>
+<!-- SEARCH SCRIPT -->
+
+<script>
+
+const searchInput =
+    document.getElementById("articleSearch");
+
+const articles =
+    document.querySelectorAll(".article-card");
+
+searchInput.addEventListener("input", function () {
+
+    const query =
+        this.value.toLowerCase().trim();
+
+    articles.forEach(function (article) {
+
+        const text =
+            article.textContent.toLowerCase();
+
+        if (text.includes(query)) {
+
+            article.style.display = "";
+
+        } else {
+
+            article.style.display = "none";
+
+        }
+
+    });
+
+});
+
+</script>
 
 </body>
-
 </html>
