@@ -164,7 +164,6 @@ a {
 .hero p {
     max-width: 680px;
 
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     font-size: 18px;
     font-weight: 600;
@@ -229,13 +228,21 @@ a {
     border: 4px solid white;
 }
 
+.hero-card-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin: 18px 0;
+    display: block;
+}
+
 .hero-card h2 {
     font-size: 25px;
     margin-bottom: 12px;
 }
 
 .hero-card p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #d7e7e1;
     font-size: 15px;
@@ -296,7 +303,6 @@ a {
 }
 
 .section-heading p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #46534f;
     font-weight: 600;
@@ -362,6 +368,15 @@ a {
     box-shadow: 0 12px 30px rgba(30,70,55,.08);
 }
 
+.article-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    display: block;
+}
+
 .article-label {
     font-size: 12px;
     font-weight: 800;
@@ -379,7 +394,6 @@ a {
 }
 
 .article-card p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #3f4b47;
     font-size: 14px;
@@ -420,7 +434,6 @@ a {
 }
 
 .about p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #3f4b47;
     font-weight: 600;
@@ -452,7 +465,6 @@ a {
 }
 
 .contact-box p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #3f4b47;
     font-weight: 600;
@@ -497,7 +509,6 @@ a {
 }
 
 .cta-box p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #3f4b47;
     font-weight: 600;
@@ -534,7 +545,6 @@ footer {
 }
 
 .footer p {
-    /* ONLY PARAGRAPH FONT CHANGED */
     font-family: Georgia, "Times New Roman", serif;
     color: #c7d8d1;
     font-size: 14px;
@@ -618,6 +628,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .article-image {
+        height: 210px;
+    }
+
     .about-inner {
         grid-template-columns: 1fr;
     }
@@ -665,6 +679,14 @@ footer {
 
     .contact-box {
         padding: 28px 18px;
+    }
+
+    .article-card {
+        padding: 20px;
+    }
+
+    .article-image {
+        height: 190px;
     }
 
 }
@@ -749,12 +771,13 @@ footer {
 
         <img
             src="file_00000000917081f887d9b94d29fdda90.png"
-            alt="Wellness & Relationships"
+            alt="Wellness & Relationships Logo"
             class="hero-logo">
-<img
-    src="file_00000000441c81fdb66283564f059db2.png"
-    alt="Wellness & Relationships"
-    style="width:100%; height:auto; border-radius:18px; margin:18px 0;">
+
+        <img
+            src="file_00000000441c81fdb66283564f059db2.png"
+            alt="Wellness and Relationships"
+            class="hero-card-image">
 
         <h2>
             Learn. Understand. Grow.
@@ -856,7 +879,15 @@ footer {
 
     <div class="article-grid">
 
+
+        <!-- COMMUNICATION -->
+
         <article class="article-card">
+
+            <img
+                src="file_00000000647081f69a2f8e819b9ddf58.png"
+                alt="Communication in healthy relationships"
+                class="article-image">
 
             <div class="article-label">
                 Communication
@@ -880,7 +911,14 @@ footer {
         </article>
 
 
+        <!-- CONSENT -->
+
         <article class="article-card">
+
+            <img
+                src="file_0000000065ec8230a6f8ea58c9ba0ac7.png"
+                alt="Healthy consent and boundaries"
+                class="article-image">
 
             <div class="article-label">
                 Consent
@@ -904,7 +942,14 @@ footer {
         </article>
 
 
+        <!-- MARRIAGE -->
+
         <article class="article-card">
+
+            <img
+                src="file_000000009c8081fd96ce0b2a17196a58.png"
+                alt="Healthy marriage and relationships"
+                class="article-image">
 
             <div class="article-label">
                 Marriage
@@ -928,7 +973,14 @@ footer {
         </article>
 
 
+        <!-- PRIVACY -->
+
         <article class="article-card">
+
+            <img
+                src="file_00000000e154820c9b480d540ade0d00.png"
+                alt="Privacy and personal boundaries"
+                class="article-image">
 
             <div class="article-label">
                 Privacy
@@ -951,7 +1003,14 @@ footer {
         </article>
 
 
+        <!-- SEXUAL WELLNESS -->
+
         <article class="article-card">
+
+            <img
+                src="file_00000000f89881f6af8b09b5b56ada35.png"
+                alt="Sexual wellness and healthy relationships"
+                class="article-image">
 
             <div class="article-label">
                 Sexual Wellness
@@ -973,6 +1032,8 @@ footer {
 
         </article>
 
+
+        <!-- WELLNESS -->
 
         <article class="article-card">
 
@@ -1133,22 +1194,32 @@ footer {
 
             <h3>Explore</h3>
 
-            <a href="#topics">Topics</a>
-            <a href="#articles">Articles</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#topics">
+                Topics
+            </a>
+
+            <a href="#articles">
+                Articles
+            </a>
+
+            <a href="#about">
+                About
+            </a>
 
         </div>
 
 
         <div>
 
-            <h3>Information</h3>
+            <h3>Contact</h3>
 
-            <a href="contact.html">Contact</a>
-            <a href="article-privacy.html">Privacy</a>
-            <a href="terms.html">Terms</a>
-            <a href="sitemap.xml">Sitemap</a>
+            <a href="#contact">
+                Contact Us
+            </a>
+
+            <a href="mailto:contact.getwellnesshub@gmail.com">
+                Email Us
+            </a>
 
         </div>
 
@@ -1169,29 +1240,28 @@ footer {
 
 <script>
 
-const searchInput =
-    document.getElementById("articleSearch");
+const searchInput = document.getElementById("articleSearch");
 
-const articles =
+const articleCards =
     document.querySelectorAll(".article-card");
 
 searchInput.addEventListener("input", function () {
 
-    const query =
+    const searchText =
         this.value.toLowerCase().trim();
 
-    articles.forEach(function (article) {
+    articleCards.forEach(function (card) {
 
         const text =
-            article.textContent.toLowerCase();
+            card.textContent.toLowerCase();
 
-        if (text.includes(query)) {
+        if (text.includes(searchText)) {
 
-            article.style.display = "";
+            card.style.display = "";
 
         } else {
 
-            article.style.display = "none";
+            card.style.display = "none";
 
         }
 
