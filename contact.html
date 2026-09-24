@@ -1,67 +1,638 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Contact | Wellness & Relationships</title>
-  <meta name="description" content="Contact Wellness & Relationships for general questions, feedback and website-related enquiries.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+<title>Contact Us | Wellness & Relationships</title>
+
+<meta name="description" content="Contact Wellness & Relationships for questions, feedback, suggestions and website-related information.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://getwellness-hub.github.io/getwellness-website/contact.html">
+
+<meta property="og:title" content="Contact Us | Wellness & Relationships">
+<meta property="og:description" content="Contact Wellness & Relationships for questions, feedback and suggestions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getwellness-hub.github.io/getwellness-website/contact.html">
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f4f8f7;
+    color:#263238;
+    line-height:1.7;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+/* HEADER */
+
+header{
+    background:#fff;
+    border-bottom:1px solid #e4ece9;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.nav{
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:800;
+    color:#155e55;
+}
+
+.logo span{
+    color:#2f8f83;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    font-size:14px;
+    color:#536662;
+}
+
+.nav-links a:hover{
+    color:#16796b;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:45px 18px 70px;
+}
+
+.hero{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 35px;
+}
+
+.label{
+    display:inline-block;
+    background:#e6f5f1;
+    color:#187568;
+    padding:6px 13px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+}
+
+h1{
+    font-size:42px;
+    line-height:1.15;
+    color:#173d38;
+    margin:16px 0;
+}
+
+.hero p{
+    color:#61736f;
+    font-size:17px;
+}
+
+/* CONTACT GRID */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 30px rgba(20,60,50,.07);
+    border:1px solid #e4eeeb;
+}
+
+.card h2{
+    margin-top:0;
+    color:#185e55;
+    font-size:24px;
+}
+
+.card p{
+    color:#61736f;
+}
+
+.info-box{
+    background:#e9f7f2;
+    border-left:5px solid #43a795;
+    padding:18px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.info-box strong{
+    color:#17695f;
+}
+
+/* LINKS */
+
+.contact-link{
+    display:block;
+    background:#f5faf8;
+    border:1px solid #dfeae7;
+    padding:15px;
+    border-radius:10px;
+    margin:12px 0;
+    color:#196b60;
+    font-weight:600;
+}
+
+.contact-link:hover{
+    background:#e9f7f2;
+}
+
+/* FORM */
+
+.form-group{
+    margin-bottom:17px;
+}
+
+label{
+    display:block;
+    font-weight:600;
+    margin-bottom:7px;
+    color:#36534e;
+}
+
+input,
+textarea{
+    width:100%;
+    border:1px solid #d6e3df;
+    border-radius:10px;
+    padding:13px;
+    font-family:inherit;
+    font-size:15px;
+    outline:none;
+    background:#fbfdfc;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#43a795;
+}
+
+textarea{
+    min-height:140px;
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    border:0;
+    border-radius:10px;
+    padding:14px;
+    background:#176f63;
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#12594f;
+}
+
+/* FAQ */
+
+.faq{
+    margin-top:25px;
+}
+
+.faq-item{
+    padding:15px 0;
+    border-bottom:1px solid #e1ebe8;
+}
+
+.faq-item strong{
+    color:#185e55;
+}
+
+.faq-item p{
+    margin-bottom:0;
+    font-size:14px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#123c37;
+    color:#dcece8;
+    margin-top:20px;
+}
+
+.footer-inner{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+}
+
+.footer-title{
+    font-size:20px;
+    font-weight:800;
+}
+
+.footer-title span{
+    color:#72c5b6;
+}
+
+footer p{
+    color:#b8d0ca;
+    font-size:14px;
+}
+
+footer h3{
+    color:#fff;
+    font-size:15px;
+}
+
+footer a{
+    display:block;
+    color:#b8d0ca;
+    font-size:14px;
+    margin:7px 0;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;
+    padding:18px;
+    color:#9fbbb5;
+    font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .nav{
+        padding:13px 15px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .container{
+        padding:30px 12px 50px;
+    }
+
+    h1{
+        font-size:31px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        padding:23px 18px;
+    }
+
+    .footer-inner{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:32px 20px;
+    }
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
-  <h1>Wellness & Relationships</h1>
+
+<nav class="nav">
+
+<a href="index.html" class="logo">
+Wellness <span>&amp; Relationships</span>
+</a>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="article-communication.html">Articles</a>
+<a href="article-consent.html">Consent</a>
+<a href="article-marriage.html">Marriage</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
 </header>
 
-<main>
-  <section class="content">
-    <p class="eyebrow">CONTACT</p>
 
-    <h2>Get in Touch</h2>
+<main class="container">
 
-    <p>
-      Thank you for visiting Wellness & Relationships.
-      We welcome general questions, feedback and suggestions
-      that can help us improve this educational resource.
-    </p>
 
-    <h3>General Enquiries</h3>
+<section class="hero">
 
-    <p>
-      For questions about our website, articles or educational content,
-      you may contact us through the contact details provided on this website.
-    </p>
+<span class="label">GET IN TOUCH</span>
 
-    <h3>Feedback</h3>
+<h1>Contact Us</h1>
 
-    <p>
-      Your feedback helps us improve the quality, clarity and usefulness
-      of our content. We appreciate respectful and constructive suggestions.
-    </p>
+<p>
+Have a question, suggestion or feedback about Wellness &amp; Relationships?
+We'd be happy to hear from you.
+</p>
 
-    <h3>Important Notice</h3>
+</section>
 
-    <p>
-      This website provides general educational information for adults.
-      We cannot provide individual medical, psychological or emergency advice.
-      If you have a personal health concern, please consult a qualified
-      healthcare or mental health professional.
-    </p>
 
-    <p>
-      We respect your privacy and do not encourage visitors to share
-      sensitive personal information through general enquiries.
-    </p>
-  </section>
+<div class="contact-grid">
+
+
+<!-- CONTACT INFORMATION -->
+
+<section class="card">
+
+<h2>We'd Love to Hear From You</h2>
+
+<p>
+Your feedback can help us improve the quality, clarity and usefulness
+of the information published on this website.
+</p>
+
+<a class="contact-link" href="index.html">
+← Back to Homepage
+</a>
+
+<a class="contact-link" href="article-communication.html">
+Read Our Articles
+</a>
+
+<a class="contact-link" href="article-consent.html">
+Learn About Consent
+</a>
+
+<div class="info-box">
+
+<strong>Important:</strong><br>
+
+This website provides general educational information.
+It is not a substitute for professional medical, legal or
+mental-health advice.
+
+</div>
+
+</section>
+
+
+<!-- CONTACT FORM -->
+
+<section class="card">
+
+<h2>Send a Message</h2>
+
+<p>
+Use the form below to prepare your message.
+</p>
+
+<form onsubmit="return sendMessage();">
+
+<div class="form-group">
+
+<label for="name">Your Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="email">Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="message">Your Message</label>
+
+<textarea
+id="message"
+placeholder="Write your message..."
+required></textarea>
+
+</div>
+
+
+<button type="submit">
+Prepare Email
+</button>
+
+</form>
+
+</section>
+
+</div>
+
+
+<!-- FAQ -->
+
+<section class="card faq">
+
+<h2>Frequently Asked Questions</h2>
+
+
+<div class="faq-item">
+
+<strong>What topics does this website cover?</strong>
+
+<p>
+The website covers communication, consent, privacy, relationships,
+wellness and educational resources.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<strong>Is the information medical advice?</strong>
+
+<p>
+No. The content is intended for general educational purposes and
+should not replace advice from a qualified professional.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<strong>Can I suggest a topic?</strong>
+
+<p>
+Yes. Suggestions and feedback are welcome and can help us decide
+which educational topics to develop next.
+</p>
+
+</div>
+
+
+<div class="faq-item">
+
+<strong>How can I report an issue with the website?</strong>
+
+<p>
+You can use the contact form above to describe the issue or provide
+feedback about a page.
+</p>
+
+</div>
+
+
+</section>
+
+
 </main>
 
+
 <footer>
-  <p>Wellness & Relationships</p>
-  <p>Education • Respect • Privacy</p>
+
+<div class="footer-inner">
+
+
+<div>
+
+<div class="footer-title">
+Wellness <span>&amp; Relationships</span>
+</div>
+
+<p>
+Practical information for better communication,
+healthy relationships, personal wellbeing and
+respectful connections.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Explore</h3>
+
+<a href="index.html">Home</a>
+<a href="article-communication.html">Articles</a>
+<a href="article-consent.html">Consent</a>
+<a href="article-marriage.html">Marriage</a>
+
+</div>
+
+
+<div>
+
+<h3>Information</h3>
+
+<a href="contact.html">Contact</a>
+<a href="article-privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="sitemap.xml">Sitemap</a>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 Wellness &amp; Relationships. All rights reserved.
+
+</div>
+
 </footer>
+
+
+<script>
+
+function sendMessage(){
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+    const subject =
+        encodeURIComponent(
+            "Website Feedback - Wellness & Relationships"
+        );
+
+    const body =
+        encodeURIComponent(
+            "Name: " + name +
+            "\nEmail: " + email +
+            "\n\nMessage:\n" + message
+        );
+
+    window.location.href =
+        "mailto:?subject=" + subject +
+        "&body=" + body;
+
+    return false;
+}
+
+</script>
 
 </body>
 </html>
