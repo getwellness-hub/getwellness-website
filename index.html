@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 
 <meta name="viewport"
       content="width=device-width, initial-scale=1.0">
 
-<title>Wellness & Relationships | Practical Guides for Better Living</title>
+<title>Wellness & Relationships | Healthy Relationship & Wellness Guides</title>
 
 <meta name="description"
-      content="Practical guides about communication, relationships, marriage, consent and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
+      content="Practical guides about communication, relationships, marriage, consent, privacy and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
 
-<meta name="robots" content="index, follow">
+<meta name="robots"
+      content="index, follow">
+
+<meta name="author"
+      content="Wellness & Relationships">
+
+<meta name="theme-color"
+      content="#173c32">
 
 <link rel="canonical"
       href="https://getwellness-hub.github.io/getwellness-website/">
 
+<!-- FAVICON -->
+
+<link rel="icon"
+      href="file_00000000917081f887d9b94d29fdda90.png"
+      type="image/png">
+
+<!-- OPEN GRAPH -->
+
 <meta property="og:title"
-      content="Wellness & Relationships">
+      content="Wellness & Relationships | Healthy Relationship & Wellness Guides">
 
 <meta property="og:description"
-      content="Practical guides for healthier relationships, communication, consent, marriage and wellness.">
+      content="Practical guides for healthier relationships, communication, consent, marriage, privacy and personal wellness.">
 
-<meta property="og:type" content="website">
+<meta property="og:type"
+      content="website">
 
 <meta property="og:url"
       content="https://getwellness-hub.github.io/getwellness-website/">
 
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name"
+      content="Wellness & Relationships">
+
+<meta property="og:image"
+      content="https://getwellness-hub.github.io/getwellness-website/file_00000000441c81fdb66283564f059db2.png">
+
+<!-- TWITTER -->
+
+<meta name="twitter:card"
+      content="summary_large_image">
+
+<meta name="twitter:title"
+      content="Wellness & Relationships">
+
+<meta name="twitter:description"
+      content="Practical guides for communication, relationships, consent, marriage and wellness.">
+
+<meta name="twitter:image"
+      content="https://getwellness-hub.github.io/getwellness-website/file_00000000441c81fdb66283564f059db2.png">
+
+
+<!-- STRUCTURED DATA -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://getwellness-hub.github.io/getwellness-website/#website",
+      "url": "https://getwellness-hub.github.io/getwellness-website/",
+      "name": "Wellness & Relationships",
+      "description": "Practical guides about communication, relationships, consent, marriage, privacy and wellness."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://getwellness-hub.github.io/getwellness-website/#organization",
+      "name": "Wellness & Relationships",
+      "url": "https://getwellness-hub.github.io/getwellness-website/",
+      "logo": "https://getwellness-hub.github.io/getwellness-website/file_00000000917081f887d9b94d29fdda90.png",
+      "email": "contact.getwellnesshub@gmail.com"
+    }
+  ]
+}
+</script>
+
 
 <style>
 
@@ -60,6 +122,34 @@ a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+/* ACCESSIBILITY */
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+}
+
+.skip-link:focus {
+    left: 15px;
+    top: 15px;
+    z-index: 9999;
+    background: #173c32;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+
 /* HEADER */
 
 .topbar {
@@ -81,8 +171,6 @@ a {
     gap: 20px;
 }
 
-/* LOGO */
-
 .brand {
     display: flex;
     align-items: center;
@@ -91,6 +179,8 @@ a {
     font-size: 20px;
     font-weight: 800;
     color: #173c32;
+
+    flex-shrink: 0;
 }
 
 .brand-logo {
@@ -111,7 +201,7 @@ a {
 
 .nav-links {
     display: flex;
-    gap: 22px;
+    gap: 18px;
     align-items: center;
 }
 
@@ -124,6 +214,7 @@ a {
 .nav-links a:hover {
     color: #2f8f6b;
 }
+
 
 /* HERO */
 
@@ -208,6 +299,7 @@ a {
     border-color: #2f8f6b;
 }
 
+
 /* HERO CARD */
 
 .hero-card {
@@ -215,7 +307,10 @@ a {
     color: white;
     border-radius: 24px;
     padding: 32px;
-    box-shadow: 0 20px 50px rgba(23,60,50,.15);
+
+    box-shadow:
+        0 20px 50px rgba(23,60,50,.15);
+
     text-align: center;
 }
 
@@ -250,6 +345,7 @@ a {
     font-style: italic;
 }
 
+
 /* SEARCH */
 
 .search-section {
@@ -267,7 +363,8 @@ a {
     display: flex;
     align-items: center;
 
-    box-shadow: 0 8px 25px rgba(30,70,55,.05);
+    box-shadow:
+        0 8px 25px rgba(30,70,55,.05);
 }
 
 .search-box span {
@@ -283,6 +380,14 @@ a {
     padding: 12px 5px;
     background: transparent;
 }
+
+.search-status {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #64736d;
+    text-align: center;
+}
+
 
 /* SECTIONS */
 
@@ -309,6 +414,7 @@ a {
     font-style: italic;
 }
 
+
 /* TOPICS */
 
 .topic-grid {
@@ -323,13 +429,15 @@ a {
     border-radius: 15px;
     padding: 20px 15px;
     text-align: center;
+
     transition: .2s ease;
 }
 
 .topic:hover {
     transform: translateY(-4px);
     border-color: #9acbb8;
-    box-shadow: 0 10px 25px rgba(30,70,55,.08);
+    box-shadow:
+        0 10px 25px rgba(30,70,55,.08);
 }
 
 .topic-icon {
@@ -342,6 +450,7 @@ a {
     color: #23483c;
     font-size: 14px;
 }
+
 
 /* ARTICLES */
 
@@ -365,7 +474,8 @@ a {
 
 .article-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(30,70,55,.08);
+    box-shadow:
+        0 12px 30px rgba(30,70,55,.08);
 }
 
 .article-image {
@@ -409,6 +519,7 @@ a {
     font-size: 14px;
 }
 
+
 /* ABOUT */
 
 .about {
@@ -441,6 +552,7 @@ a {
     margin-bottom: 12px;
 }
 
+
 /* CONTACT */
 
 .contact {
@@ -455,7 +567,9 @@ a {
     border-radius: 22px;
     padding: 38px;
     text-align: center;
-    box-shadow: 0 8px 25px rgba(30,70,55,.05);
+
+    box-shadow:
+        0 8px 25px rgba(30,70,55,.05);
 }
 
 .contact-box h2 {
@@ -487,6 +601,7 @@ a {
     color: #173c32;
 }
 
+
 /* CTA */
 
 .cta {
@@ -515,6 +630,7 @@ a {
     font-style: italic;
     margin-bottom: 20px;
 }
+
 
 /* FOOTER */
 
@@ -577,6 +693,7 @@ footer {
     font-size: 13px;
 }
 
+
 /* MOBILE */
 
 @media (max-width: 800px) {
@@ -596,11 +713,11 @@ footer {
     }
 
     .nav-links {
-        gap: 12px;
+        gap: 10px;
     }
 
     .nav-links a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .hero {
@@ -642,15 +759,37 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
 
-    .nav-links a:nth-child(2) {
-        display: none;
+@media (max-width: 560px) {
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brand {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
     }
 
     .hero {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
     }
 
     .section,
@@ -659,10 +798,6 @@ footer {
     .contact {
         padding-left: 16px;
         padding-right: 16px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
     }
 
     .section-heading h2 {
@@ -691,10 +826,52 @@ footer {
 
 }
 
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .brand {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        gap: 7px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-card {
+        padding: 22px;
+    }
+
+    .hero-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+
 </style>
 </head>
 
+
 <body>
+
+
+<!-- SKIP LINK -->
+
+<a href="#main-content"
+   class="skip-link">
+    Skip to main content
+</a>
+
 
 <!-- HEADER -->
 
@@ -702,12 +879,16 @@ footer {
 
     <div class="nav">
 
-        <a href="index.html" class="brand">
+        <a href="index.html"
+           class="brand"
+           aria-label="Wellness and Relationships home">
 
             <img
                 src="file_00000000917081f887d9b94d29fdda90.png"
-                alt="Wellness & Relationships Logo"
-                class="brand-logo">
+                alt="Wellness & Relationships logo"
+                class="brand-logo"
+                width="52"
+                height="52">
 
             <div class="brand-name">
                 Wellness<span>&</span>Relationships
@@ -715,7 +896,9 @@ footer {
 
         </a>
 
-        <nav class="nav-links">
+
+        <nav class="nav-links"
+             aria-label="Main navigation">
 
             <a href="#topics">Topics</a>
             <a href="#articles">Articles</a>
@@ -729,6 +912,11 @@ footer {
 </header>
 
 
+<!-- MAIN -->
+
+<main id="main-content">
+
+
 <!-- HERO -->
 
 <section class="hero">
@@ -739,16 +927,19 @@ footer {
             WELLNESS • RELATIONSHIPS • BETTER LIVING
         </span>
 
+
         <h1>
             Better relationships
             <span>start with better understanding.</span>
         </h1>
+
 
         <p>
             Simple, practical and easy-to-understand guides
             about communication, relationships, marriage,
             consent and personal wellness.
         </p>
+
 
         <div class="hero-buttons">
 
@@ -771,13 +962,17 @@ footer {
 
         <img
             src="file_00000000917081f887d9b94d29fdda90.png"
-            alt="Wellness & Relationships Logo"
-            class="hero-logo">
+            alt="Wellness & Relationships logo"
+            class="hero-logo"
+            width="120"
+            height="120">
 
         <img
             src="file_00000000441c81fdb66283564f059db2.png"
             alt="Wellness and Relationships"
-            class="hero-card-image">
+            class="hero-card-image"
+            width="600"
+            height="230">
 
         <h2>
             Learn. Understand. Grow.
@@ -797,11 +992,12 @@ footer {
 
 <!-- SEARCH -->
 
-<section class="search-section">
+<section class="search-section"
+         aria-label="Search articles">
 
     <div class="search-box">
 
-        <span>🔎</span>
+        <span aria-hidden="true">🔎</span>
 
         <input
             type="search"
@@ -811,16 +1007,25 @@ footer {
 
     </div>
 
+    <div
+        id="searchStatus"
+        class="search-status"
+        aria-live="polite">
+    </div>
+
 </section>
 
 
 <!-- TOPICS -->
 
-<section class="section" id="topics">
+<section class="section"
+         id="topics">
 
     <div class="section-heading">
 
-        <h2>Explore Topics</h2>
+        <h2>
+            Explore Topics
+        </h2>
 
         <p>
             Find practical information by topic.
@@ -831,29 +1036,79 @@ footer {
 
     <div class="topic-grid">
 
-        <a class="topic" href="#articles">
-            <div class="topic-icon">💬</div>
-            <strong>Communication</strong>
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon"
+                 aria-hidden="true">
+                💬
+            </div>
+
+            <strong>
+                Communication
+            </strong>
+
         </a>
 
-        <a class="topic" href="#articles">
-            <div class="topic-icon">❤️</div>
-            <strong>Relationships</strong>
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon"
+                 aria-hidden="true">
+                ❤️
+            </div>
+
+            <strong>
+                Relationships
+            </strong>
+
         </a>
 
-        <a class="topic" href="#articles">
-            <div class="topic-icon">💍</div>
-            <strong>Marriage</strong>
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon"
+                 aria-hidden="true">
+                💍
+            </div>
+
+            <strong>
+                Marriage
+            </strong>
+
         </a>
 
-        <a class="topic" href="#articles">
-            <div class="topic-icon">🤝</div>
-            <strong>Consent</strong>
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon"
+                 aria-hidden="true">
+                🤝
+            </div>
+
+            <strong>
+                Consent
+            </strong>
+
         </a>
 
-        <a class="topic" href="#articles">
-            <div class="topic-icon">🌱</div>
-            <strong>Sexual Wellness</strong>
+
+        <a class="topic"
+           href="#articles">
+
+            <div class="topic-icon"
+                 aria-hidden="true">
+                🌱
+            </div>
+
+            <strong>
+                Sexual Wellness
+            </strong>
+
         </a>
 
     </div>
@@ -863,11 +1118,14 @@ footer {
 
 <!-- ARTICLES -->
 
-<section class="section" id="articles">
+<section class="section"
+         id="articles">
 
     <div class="section-heading">
 
-        <h2>Latest Guides</h2>
+        <h2>
+            Latest Guides
+        </h2>
 
         <p>
             Practical articles written in a simple,
@@ -887,7 +1145,10 @@ footer {
             <img
                 src="file_00000000647081f69a2f8e819b9ddf58.png"
                 alt="Communication in healthy relationships"
-                class="article-image">
+                class="article-image"
+                width="600"
+                height="190"
+                loading="lazy">
 
             <div class="article-label">
                 Communication
@@ -905,7 +1166,9 @@ footer {
 
             <a class="read"
                href="article-communication.html">
+
                 Read Article →
+                
             </a>
 
         </article>
@@ -918,7 +1181,10 @@ footer {
             <img
                 src="file_0000000065ec8230a6f8ea58c9ba0ac7.png"
                 alt="Healthy consent and boundaries"
-                class="article-image">
+                class="article-image"
+                width="600"
+                height="190"
+                loading="lazy">
 
             <div class="article-label">
                 Consent
@@ -936,7 +1202,9 @@ footer {
 
             <a class="read"
                href="article-consent.html">
+
                 Read Article →
+
             </a>
 
         </article>
@@ -949,7 +1217,10 @@ footer {
             <img
                 src="file_000000009c8081fd96ce0b2a17196a58.png"
                 alt="Healthy marriage and relationships"
-                class="article-image">
+                class="article-image"
+                width="600"
+                height="190"
+                loading="lazy">
 
             <div class="article-label">
                 Marriage
@@ -967,7 +1238,9 @@ footer {
 
             <a class="read"
                href="article-marriage.html">
+
                 Read Article →
+
             </a>
 
         </article>
@@ -980,7 +1253,10 @@ footer {
             <img
                 src="file_00000000e154820c9b480d540ade0d00.png"
                 alt="Privacy and personal boundaries"
-                class="article-image">
+                class="article-image"
+                width="600"
+                height="190"
+                loading="lazy">
 
             <div class="article-label">
                 Privacy
@@ -997,7 +1273,9 @@ footer {
 
             <a class="read"
                href="article-privacy.html">
+
                 Read Article →
+
             </a>
 
         </article>
@@ -1010,7 +1288,10 @@ footer {
             <img
                 src="file_00000000f89881f6af8b09b5b56ada35.png"
                 alt="Sexual wellness and healthy relationships"
-                class="article-image">
+                class="article-image"
+                width="600"
+                height="190"
+                loading="lazy">
 
             <div class="article-label">
                 Sexual Wellness
@@ -1027,7 +1308,9 @@ footer {
 
             <a class="read"
                href="article-sexual-wellness.html">
+
                 Read Article →
+
             </a>
 
         </article>
@@ -1053,7 +1336,9 @@ footer {
 
             <a class="read"
                href="#about">
+
                 Learn More →
+
             </a>
 
         </article>
@@ -1065,7 +1350,8 @@ footer {
 
 <!-- ABOUT -->
 
-<section class="about" id="about">
+<section class="about"
+         id="about">
 
     <div class="about-inner">
 
@@ -1118,7 +1404,8 @@ footer {
 
 <!-- CONTACT -->
 
-<section class="contact" id="contact">
+<section class="contact"
+         id="contact">
 
     <div class="contact-box">
 
@@ -1159,9 +1446,12 @@ footer {
             communication and relationships.
         </p>
 
-        <a href="#articles"
-           class="btn btn-primary">
+        <a
+            href="#articles"
+            class="btn btn-primary">
+
             View Articles
+
         </a>
 
     </div>
@@ -1169,11 +1459,15 @@ footer {
 </section>
 
 
+</main>
+
+
 <!-- FOOTER -->
 
 <footer>
 
     <div class="footer-inner">
+
 
         <div>
 
@@ -1192,7 +1486,9 @@ footer {
 
         <div>
 
-            <h3>Explore</h3>
+            <h3>
+                Explore
+            </h3>
 
             <a href="#topics">
                 Topics
@@ -1211,7 +1507,9 @@ footer {
 
         <div>
 
-            <h3>Contact</h3>
+            <h3>
+                Contact
+            </h3>
 
             <a href="#contact">
                 Contact Us
@@ -1240,17 +1538,25 @@ footer {
 
 <script>
 
-const searchInput = document.getElementById("articleSearch");
+const searchInput =
+    document.getElementById("articleSearch");
 
 const articleCards =
     document.querySelectorAll(".article-card");
 
-searchInput.addEventListener("input", function () {
+const searchStatus =
+    document.getElementById("searchStatus");
+
+
+function updateSearchStatus() {
 
     const searchText =
-        this.value.toLowerCase().trim();
+        searchInput.value.toLowerCase().trim();
 
-    articleCards.forEach(function (card) {
+    let visibleCount = 0;
+
+
+    articleCards.forEach(function(card) {
 
         const text =
             card.textContent.toLowerCase();
@@ -1258,6 +1564,8 @@ searchInput.addEventListener("input", function () {
         if (text.includes(searchText)) {
 
             card.style.display = "";
+
+            visibleCount++;
 
         } else {
 
@@ -1267,9 +1575,29 @@ searchInput.addEventListener("input", function () {
 
     });
 
-});
+
+    if (searchText === "") {
+
+        searchStatus.textContent = "";
+
+    } else {
+
+        searchStatus.textContent =
+            visibleCount +
+            " article(s) found.";
+
+    }
+
+}
+
+
+searchInput.addEventListener(
+    "input",
+    updateSearchStatus
+);
 
 </script>
+
 
 </body>
 </html>
