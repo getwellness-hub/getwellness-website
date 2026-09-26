@@ -391,7 +391,7 @@ input {
 
 .topic-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 14px;
 }
 
@@ -399,9 +399,10 @@ input {
     background: white;
     border: 1px solid #e2ebe7;
     border-radius: 15px;
-    padding: 20px 15px;
+    padding: 20px 12px;
     text-align: center;
     transition: .2s ease;
+    cursor: pointer;
 }
 
 .topic:hover,
@@ -420,7 +421,7 @@ input {
 .topic strong {
     display: block;
     color: #23483c;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* ARTICLES */
@@ -1009,28 +1010,42 @@ footer {
 
     <button class="topic"
             type="button"
-            data-filter="marriage">
+            data-filter="marriage & partnership">
 
         <div class="topic-icon"
              aria-hidden="true">
             💍
         </div>
 
-        <strong>Marriage</strong>
+        <strong>Marriage & Partnership</strong>
 
     </button>
 
 
     <button class="topic"
             type="button"
-            data-filter="consent">
+            data-filter="consent & safety">
 
         <div class="topic-icon"
              aria-hidden="true">
             🤝
         </div>
 
-        <strong>Consent</strong>
+        <strong>Consent & Safety</strong>
+
+    </button>
+
+
+    <button class="topic"
+            type="button"
+            data-filter="privacy & digital life">
+
+        <div class="topic-icon"
+             aria-hidden="true">
+            🔐
+        </div>
+
+        <strong>Privacy & Digital Life</strong>
 
     </button>
 
@@ -1041,7 +1056,7 @@ footer {
 
         <div class="topic-icon"
              aria-hidden="true">
-            🌱
+            🌿
         </div>
 
         <strong>Sexual Wellness</strong>
@@ -1112,7 +1127,7 @@ footer {
 <!-- CONSENT -->
 
 <article class="article-card"
-         data-category="consent">
+         data-category="consent & safety">
 
     <img
         src="file_0000000065ec8230a6f8ea58c9ba0ac7.png"
@@ -1123,7 +1138,7 @@ footer {
         loading="lazy">
 
     <div class="article-label">
-        Consent
+        Consent & Safety
     </div>
 
     <h3>
@@ -1174,7 +1189,7 @@ footer {
 <!-- MARRIAGE -->
 
 <article class="article-card"
-         data-category="marriage">
+         data-category="marriage & partnership">
 
     <img
         src="file_000000009c8081fd96ce0b2a17196a58.png"
@@ -1185,7 +1200,7 @@ footer {
         loading="lazy">
 
     <div class="article-label">
-        Marriage
+        Marriage & Partnership
     </div>
 
     <h3>
@@ -1209,7 +1224,7 @@ footer {
 <!-- PRIVACY -->
 
 <article class="article-card"
-         data-category="privacy">
+         data-category="privacy & digital life">
 
     <img
         src="file_00000000e154820c9b480d540ade0d00.png"
@@ -1220,7 +1235,7 @@ footer {
         loading="lazy">
 
     <div class="article-label">
-        Privacy
+        Privacy & Digital Life
     </div>
 
     <h3>
