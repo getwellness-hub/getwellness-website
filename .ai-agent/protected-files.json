@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "protected_files": [
+    "file_00000000917081f887d9b94d29fdda90.png",
+    "file_00000000441c81fdb66283564f059db2.png",
+    "file_00000000647081f69a2f8e819b9ddf58.png",
+    "file_0000000065ec8230a6f8ea58c9ba0ac7.png",
+    "file_000000009c8081fd96ce0b2a17196a58.png",
+    "file_00000000e154820c9b480d540ade0d00.png",
+    "file_00000000f89881f6af8b09b5b56ada35.png"
+  ],
+  "protected_rules": {
+    "allow_delete": false,
+    "allow_rename": false,
+    "allow_move": false,
+    "allow_replace": false,
+    "allow_modify": false
+  }
+}
