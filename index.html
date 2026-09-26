@@ -10,7 +10,7 @@
 <title>Wellness & Relationships | Healthy Relationship & Wellness Guides</title>
 
 <meta name="description"
-      content="Practical guides about communication, relationships, marriage, consent, privacy and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
+      content="Practical guides about communication, relationships, marriage, consent, privacy, sexual wellness and healthy relationships.">
 
 <meta name="robots" content="index, follow">
 
@@ -114,6 +114,11 @@ a {
     color: inherit;
 }
 
+button,
+input {
+    font: inherit;
+}
+
 /* ACCESSIBILITY */
 
 .skip-link {
@@ -180,9 +185,11 @@ a {
     color: #2f8f6b;
 }
 
+/* NAVIGATION */
+
 .nav-links {
     display: flex;
-    gap: 22px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -397,10 +404,12 @@ a {
     transition: .2s ease;
 }
 
-.topic:hover {
+.topic:hover,
+.topic.active {
     transform: translateY(-4px);
     border-color: #9acbb8;
     box-shadow: 0 10px 25px rgba(30,70,55,.08);
+    background: #f3faf7;
 }
 
 .topic-icon {
@@ -478,6 +487,24 @@ a {
     color: #2f8f6b;
     font-weight: 800;
     font-size: 14px;
+}
+
+.no-image-card {
+    min-height: 360px;
+    justify-content: center;
+}
+
+/* NO RESULTS */
+
+.no-results {
+    display: none;
+    background: white;
+    border: 1px solid #e1e9e5;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    color: #46534f;
+    margin-top: 20px;
 }
 
 /* ABOUT */
@@ -639,11 +666,36 @@ footer {
     color: white;
 }
 
-.copyright {
+.footer-divider {
     max-width: 1120px;
     margin: auto;
     border-top: 1px solid rgba(255,255,255,.12);
+}
+
+.footer-legal {
+    max-width: 1120px;
+    margin: auto;
     padding: 18px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-legal a {
+    color: #b7c9c1;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-legal a:hover {
+    color: white;
+}
+
+.copyright {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 20px 20px;
     color: #b7c9c1;
     font-size: 13px;
 }
@@ -760,6 +812,11 @@ footer {
         height: 190px;
     }
 
+    .footer-legal {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 
 </style>
@@ -802,7 +859,7 @@ footer {
 
         <a href="#about">About</a>
 
-        <a href="#contact">Contact</a>
+        <a href="contact.html">Contact</a>
 
     </nav>
 
@@ -922,8 +979,9 @@ footer {
 
 <div class="topic-grid">
 
-    <a class="topic"
-       href="#articles">
+    <button class="topic"
+            type="button"
+            data-filter="communication">
 
         <div class="topic-icon"
              aria-hidden="true">
@@ -932,11 +990,12 @@ footer {
 
         <strong>Communication</strong>
 
-    </a>
+    </button>
 
 
-    <a class="topic"
-       href="#articles">
+    <button class="topic"
+            type="button"
+            data-filter="relationships">
 
         <div class="topic-icon"
              aria-hidden="true">
@@ -945,11 +1004,12 @@ footer {
 
         <strong>Relationships</strong>
 
-    </a>
+    </button>
 
 
-    <a class="topic"
-       href="#articles">
+    <button class="topic"
+            type="button"
+            data-filter="marriage">
 
         <div class="topic-icon"
              aria-hidden="true">
@@ -958,11 +1018,12 @@ footer {
 
         <strong>Marriage</strong>
 
-    </a>
+    </button>
 
 
-    <a class="topic"
-       href="#articles">
+    <button class="topic"
+            type="button"
+            data-filter="consent">
 
         <div class="topic-icon"
              aria-hidden="true">
@@ -971,11 +1032,12 @@ footer {
 
         <strong>Consent</strong>
 
-    </a>
+    </button>
 
 
-    <a class="topic"
-       href="#articles">
+    <button class="topic"
+            type="button"
+            data-filter="sexual wellness">
 
         <div class="topic-icon"
              aria-hidden="true">
@@ -984,7 +1046,7 @@ footer {
 
         <strong>Sexual Wellness</strong>
 
-    </a>
+    </button>
 
 </div>
 
@@ -1008,12 +1070,14 @@ footer {
 </div>
 
 
-<div class="article-grid">
+<div class="article-grid"
+     id="articleGrid">
 
 
 <!-- COMMUNICATION -->
 
-<article class="article-card">
+<article class="article-card"
+         data-category="communication">
 
     <img
         src="file_00000000647081f69a2f8e819b9ddf58.png"
@@ -1047,7 +1111,8 @@ footer {
 
 <!-- CONSENT -->
 
-<article class="article-card">
+<article class="article-card"
+         data-category="consent">
 
     <img
         src="file_0000000065ec8230a6f8ea58c9ba0ac7.png"
@@ -1079,9 +1144,37 @@ footer {
 </article>
 
 
+<!-- HEALTHY RELATIONSHIPS -->
+
+<article class="article-card no-image-card"
+         data-category="relationships">
+
+    <div class="article-label">
+        Relationships
+    </div>
+
+    <h3>
+        Building Healthy Relationships
+    </h3>
+
+    <p>
+        Explore practical ideas about trust,
+        communication, respect, boundaries
+        and emotional connection.
+    </p>
+
+    <a class="read"
+       href="article-healthy-relationship.html">
+        Read Article →
+    </a>
+
+</article>
+
+
 <!-- MARRIAGE -->
 
-<article class="article-card">
+<article class="article-card"
+         data-category="marriage">
 
     <img
         src="file_000000009c8081fd96ce0b2a17196a58.png"
@@ -1115,7 +1208,8 @@ footer {
 
 <!-- PRIVACY -->
 
-<article class="article-card">
+<article class="article-card"
+         data-category="privacy">
 
     <img
         src="file_00000000e154820c9b480d540ade0d00.png"
@@ -1148,7 +1242,8 @@ footer {
 
 <!-- SEXUAL WELLNESS -->
 
-<article class="article-card">
+<article class="article-card"
+         data-category="sexual wellness">
 
     <img
         src="file_00000000f89881f6af8b09b5b56ada35.png"
@@ -1178,31 +1273,14 @@ footer {
 
 </article>
 
+</div>
 
-<!-- WELLNESS -->
 
-<article class="article-card">
+<div class="no-results"
+     id="noResults">
 
-    <div class="article-label">
-        Wellness
-    </div>
-
-    <h3>
-        More Wellness Guides Coming Soon
-    </h3>
-
-    <p>
-        We are continuing to build a useful library
-        of practical wellness and relationship
-        information.
-    </p>
-
-    <a class="read"
-       href="#about">
-        Learn More →
-    </a>
-
-</article>
+    No matching articles found.
+    Try another search or topic.
 
 </div>
 
@@ -1361,10 +1439,14 @@ footer {
 
     <div>
 
-        <h3>Contact</h3>
+        <h3>Website</h3>
 
-        <a href="#contact">
+        <a href="contact.html">
             Contact Us
+        </a>
+
+        <a href="terms.html">
+            Terms & Conditions
         </a>
 
         <a href="mailto:contact.getwellnesshub@gmail.com">
@@ -1372,6 +1454,22 @@ footer {
         </a>
 
     </div>
+
+</div>
+
+
+<div class="footer-divider"></div>
+
+
+<div class="footer-legal">
+
+    <a href="terms.html">
+        Terms & Conditions
+    </a>
+
+    <a href="contact.html">
+        Contact
+    </a>
 
 </div>
 
@@ -1386,7 +1484,7 @@ footer {
 </footer>
 
 
-<!-- SEARCH SCRIPT -->
+<!-- SEARCH + TOPIC FILTER SCRIPT -->
 
 <script>
 
@@ -1396,19 +1494,43 @@ const searchInput =
 const articleCards =
     document.querySelectorAll(".article-card");
 
-searchInput.addEventListener("input", function () {
+const topicButtons =
+    document.querySelectorAll(".topic");
+
+const noResults =
+    document.getElementById("noResults");
+
+let activeFilter = "all";
+
+
+function filterArticles() {
 
     const searchText =
-        this.value.toLowerCase().trim();
+        searchInput.value.toLowerCase().trim();
 
-    articleCards.forEach(function (card) {
+    let visibleCount = 0;
+
+
+    articleCards.forEach(function(card) {
 
         const text =
             card.textContent.toLowerCase();
 
-        if (text.includes(searchText)) {
+        const category =
+            card.dataset.category.toLowerCase();
+
+        const matchesSearch =
+            text.includes(searchText);
+
+        const matchesTopic =
+            activeFilter === "all" ||
+            category === activeFilter;
+
+        if (matchesSearch && matchesTopic) {
 
             card.style.display = "";
+
+            visibleCount++;
 
         } else {
 
@@ -1418,7 +1540,57 @@ searchInput.addEventListener("input", function () {
 
     });
 
+
+    if (visibleCount === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+}
+
+
+searchInput.addEventListener(
+    "input",
+    filterArticles
+);
+
+
+topicButtons.forEach(function(button) {
+
+    button.addEventListener(
+        "click",
+        function() {
+
+            topicButtons.forEach(function(item) {
+
+                item.classList.remove("active");
+
+            });
+
+
+            this.classList.add("active");
+
+            activeFilter =
+                this.dataset.filter.toLowerCase();
+
+            filterArticles();
+
+            document
+                .getElementById("articles")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+
+        }
+    );
+
 });
+
 
 </script>
 
