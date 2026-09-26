@@ -12,23 +12,14 @@
 <meta name="description"
       content="Practical guides about communication, relationships, marriage, consent, privacy and sexual wellness. Learn simple ideas for healthier relationships and better wellbeing.">
 
-<meta name="robots"
-      content="index, follow">
+<meta name="robots" content="index, follow">
 
-<meta name="author"
-      content="Wellness & Relationships">
+<meta name="author" content="Wellness & Relationships">
 
-<meta name="theme-color"
-      content="#173c32">
+<meta name="theme-color" content="#173c32">
 
 <link rel="canonical"
       href="https://getwellness-hub.github.io/getwellness-website/">
-
-<!-- FAVICON -->
-
-<link rel="icon"
-      href="file_00000000917081f887d9b94d29fdda90.png"
-      type="image/png">
 
 <!-- OPEN GRAPH -->
 
@@ -36,7 +27,7 @@
       content="Wellness & Relationships | Healthy Relationship & Wellness Guides">
 
 <meta property="og:description"
-      content="Practical guides for healthier relationships, communication, consent, marriage, privacy and personal wellness.">
+      content="Practical guides for healthier relationships, communication, consent, marriage, privacy and wellness.">
 
 <meta property="og:type"
       content="website">
@@ -44,11 +35,11 @@
 <meta property="og:url"
       content="https://getwellness-hub.github.io/getwellness-website/">
 
+<meta property="og:image"
+      content="https://getwellness-hub.github.io/getwellness-website/file_00000000917081f887d9b94d29fdda90.png">
+
 <meta property="og:site_name"
       content="Wellness & Relationships">
-
-<meta property="og:image"
-      content="https://getwellness-hub.github.io/getwellness-website/file_00000000441c81fdb66283564f059db2.png">
 
 <!-- TWITTER -->
 
@@ -56,14 +47,19 @@
       content="summary_large_image">
 
 <meta name="twitter:title"
-      content="Wellness & Relationships">
+      content="Wellness & Relationships | Healthy Relationship & Wellness Guides">
 
 <meta name="twitter:description"
-      content="Practical guides for communication, relationships, consent, marriage and wellness.">
+      content="Practical guides about communication, relationships, consent, privacy, marriage and wellness.">
 
 <meta name="twitter:image"
-      content="https://getwellness-hub.github.io/getwellness-website/file_00000000441c81fdb66283564f059db2.png">
+      content="https://getwellness-hub.github.io/getwellness-website/file_00000000917081f887d9b94d29fdda90.png">
 
+<!-- FAVICON -->
+
+<link rel="icon"
+      type="image/png"
+      href="file_00000000917081f887d9b94d29fdda90.png">
 
 <!-- STRUCTURED DATA -->
 
@@ -73,23 +69,19 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://getwellness-hub.github.io/getwellness-website/#website",
-      "url": "https://getwellness-hub.github.io/getwellness-website/",
       "name": "Wellness & Relationships",
-      "description": "Practical guides about communication, relationships, consent, marriage, privacy and wellness."
+      "url": "https://getwellness-hub.github.io/getwellness-website/",
+      "description": "Practical guides about communication, relationships, marriage, consent, privacy and wellness."
     },
     {
       "@type": "Organization",
-      "@id": "https://getwellness-hub.github.io/getwellness-website/#organization",
       "name": "Wellness & Relationships",
       "url": "https://getwellness-hub.github.io/getwellness-website/",
-      "logo": "https://getwellness-hub.github.io/getwellness-website/file_00000000917081f887d9b94d29fdda90.png",
-      "email": "contact.getwellnesshub@gmail.com"
+      "logo": "https://getwellness-hub.github.io/getwellness-website/file_00000000917081f887d9b94d29fdda90.png"
     }
   ]
 }
 </script>
-
 
 <style>
 
@@ -122,33 +114,22 @@ a {
     color: inherit;
 }
 
-img {
-    max-width: 100%;
-}
-
-button,
-input {
-    font: inherit;
-}
-
 /* ACCESSIBILITY */
 
 .skip-link {
     position: absolute;
     left: -9999px;
-    top: auto;
-}
-
-.skip-link:focus {
-    left: 15px;
-    top: 15px;
-    z-index: 9999;
+    top: 10px;
     background: #173c32;
     color: white;
     padding: 10px 15px;
-    border-radius: 8px;
+    border-radius: 6px;
+    z-index: 9999;
 }
 
+.skip-link:focus {
+    left: 10px;
+}
 
 /* HEADER */
 
@@ -171,6 +152,8 @@ input {
     gap: 20px;
 }
 
+/* LOGO */
+
 .brand {
     display: flex;
     align-items: center;
@@ -179,8 +162,6 @@ input {
     font-size: 20px;
     font-weight: 800;
     color: #173c32;
-
-    flex-shrink: 0;
 }
 
 .brand-logo {
@@ -201,7 +182,7 @@ input {
 
 .nav-links {
     display: flex;
-    gap: 18px;
+    gap: 22px;
     align-items: center;
 }
 
@@ -214,7 +195,6 @@ input {
 .nav-links a:hover {
     color: #2f8f6b;
 }
-
 
 /* HERO */
 
@@ -299,7 +279,6 @@ input {
     border-color: #2f8f6b;
 }
 
-
 /* HERO CARD */
 
 .hero-card {
@@ -307,10 +286,7 @@ input {
     color: white;
     border-radius: 24px;
     padding: 32px;
-
-    box-shadow:
-        0 20px 50px rgba(23,60,50,.15);
-
+    box-shadow: 0 20px 50px rgba(23,60,50,.15);
     text-align: center;
 }
 
@@ -345,7 +321,6 @@ input {
     font-style: italic;
 }
 
-
 /* SEARCH */
 
 .search-section {
@@ -363,8 +338,7 @@ input {
     display: flex;
     align-items: center;
 
-    box-shadow:
-        0 8px 25px rgba(30,70,55,.05);
+    box-shadow: 0 8px 25px rgba(30,70,55,.05);
 }
 
 .search-box span {
@@ -380,14 +354,6 @@ input {
     padding: 12px 5px;
     background: transparent;
 }
-
-.search-status {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #64736d;
-    text-align: center;
-}
-
 
 /* SECTIONS */
 
@@ -414,7 +380,6 @@ input {
     font-style: italic;
 }
 
-
 /* TOPICS */
 
 .topic-grid {
@@ -429,15 +394,13 @@ input {
     border-radius: 15px;
     padding: 20px 15px;
     text-align: center;
-
     transition: .2s ease;
 }
 
 .topic:hover {
     transform: translateY(-4px);
     border-color: #9acbb8;
-    box-shadow:
-        0 10px 25px rgba(30,70,55,.08);
+    box-shadow: 0 10px 25px rgba(30,70,55,.08);
 }
 
 .topic-icon {
@@ -450,7 +413,6 @@ input {
     color: #23483c;
     font-size: 14px;
 }
-
 
 /* ARTICLES */
 
@@ -474,8 +436,7 @@ input {
 
 .article-card:hover {
     transform: translateY(-4px);
-    box-shadow:
-        0 12px 30px rgba(30,70,55,.08);
+    box-shadow: 0 12px 30px rgba(30,70,55,.08);
 }
 
 .article-image {
@@ -519,7 +480,6 @@ input {
     font-size: 14px;
 }
 
-
 /* ABOUT */
 
 .about {
@@ -552,7 +512,6 @@ input {
     margin-bottom: 12px;
 }
 
-
 /* CONTACT */
 
 .contact {
@@ -567,9 +526,7 @@ input {
     border-radius: 22px;
     padding: 38px;
     text-align: center;
-
-    box-shadow:
-        0 8px 25px rgba(30,70,55,.05);
+    box-shadow: 0 8px 25px rgba(30,70,55,.05);
 }
 
 .contact-box h2 {
@@ -601,7 +558,6 @@ input {
     color: #173c32;
 }
 
-
 /* CTA */
 
 .cta {
@@ -630,7 +586,6 @@ input {
     font-style: italic;
     margin-bottom: 20px;
 }
-
 
 /* FOOTER */
 
@@ -693,7 +648,6 @@ footer {
     font-size: 13px;
 }
 
-
 /* MOBILE */
 
 @media (max-width: 800px) {
@@ -713,11 +667,11 @@ footer {
     }
 
     .nav-links {
-        gap: 10px;
+        gap: 12px;
     }
 
     .nav-links a {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .hero {
@@ -759,37 +713,15 @@ footer {
     }
 }
 
+@media (max-width: 480px) {
 
-@media (max-width: 560px) {
-
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .brand {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .nav-links {
-        width: 100%;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .nav-links a {
-        font-size: 12px;
+    .nav-links a:nth-child(2) {
+        display: none;
     }
 
     .hero {
         padding-left: 16px;
         padding-right: 16px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
     }
 
     .section,
@@ -798,6 +730,10 @@ footer {
     .contact {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
     }
 
     .section-heading h2 {
@@ -826,166 +762,124 @@ footer {
 
 }
 
-
-/* VERY SMALL MOBILE */
-
-@media (max-width: 360px) {
-
-    .brand {
-        font-size: 14px;
-    }
-
-    .nav-links {
-        gap: 7px;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    .hero-card {
-        padding: 22px;
-    }
-
-    .hero-logo {
-        width: 100px;
-        height: 100px;
-    }
-
-}
-
 </style>
-</head>
 
+</head>
 
 <body>
 
-
-<!-- SKIP LINK -->
-
-<a href="#main-content"
-   class="skip-link">
+<a href="#main-content" class="skip-link">
     Skip to main content
 </a>
-
 
 <!-- HEADER -->
 
 <header class="topbar">
 
-    <div class="nav">
+<div class="nav">
 
-        <a href="index.html"
-           class="brand"
-           aria-label="Wellness and Relationships home">
+    <a href="index.html" class="brand">
 
-            <img
-                src="file_00000000917081f887d9b94d29fdda90.png"
-                alt="Wellness & Relationships logo"
-                class="brand-logo"
-                width="52"
-                height="52">
+        <img
+            src="file_00000000917081f887d9b94d29fdda90.png"
+            alt="Wellness & Relationships Logo"
+            class="brand-logo"
+            width="52"
+            height="52">
 
-            <div class="brand-name">
-                Wellness<span>&</span>Relationships
-            </div>
+        <div class="brand-name">
+            Wellness<span>&</span>Relationships
+        </div>
 
-        </a>
+    </a>
 
+    <nav class="nav-links"
+         aria-label="Main navigation">
 
-        <nav class="nav-links"
-             aria-label="Main navigation">
+        <a href="#topics">Topics</a>
 
-            <a href="#topics">Topics</a>
-            <a href="#articles">Articles</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <a href="#articles">Articles</a>
 
-        </nav>
+        <a href="#about">About</a>
 
-    </div>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</div>
 
 </header>
 
 
-<!-- MAIN -->
-
 <main id="main-content">
-
 
 <!-- HERO -->
 
 <section class="hero">
 
-    <div>
+<div>
 
-        <span class="hero-tag">
-            WELLNESS • RELATIONSHIPS • BETTER LIVING
-        </span>
+    <span class="hero-tag">
+        WELLNESS • RELATIONSHIPS • BETTER LIVING
+    </span>
 
+    <h1>
+        Better relationships
+        <span>start with better understanding.</span>
+    </h1>
 
-        <h1>
-            Better relationships
-            <span>start with better understanding.</span>
-        </h1>
+    <p>
+        Simple, practical and easy-to-understand guides
+        about communication, relationships, marriage,
+        consent and personal wellness.
+    </p>
 
+    <div class="hero-buttons">
 
-        <p>
-            Simple, practical and easy-to-understand guides
-            about communication, relationships, marriage,
-            consent and personal wellness.
-        </p>
+        <a href="#articles"
+           class="btn btn-primary">
+            Explore Articles
+        </a>
 
-
-        <div class="hero-buttons">
-
-            <a href="#articles"
-               class="btn btn-primary">
-                Explore Articles
-            </a>
-
-            <a href="#topics"
-               class="btn btn-secondary">
-                Browse Topics
-            </a>
-
-        </div>
+        <a href="#topics"
+           class="btn btn-secondary">
+            Browse Topics
+        </a>
 
     </div>
 
+</div>
 
-    <div class="hero-card">
 
-        <img
-            src="file_00000000917081f887d9b94d29fdda90.png"
-            alt="Wellness & Relationships logo"
-            class="hero-logo"
-            width="120"
-            height="120">
+<div class="hero-card">
 
-        <img
-            src="file_00000000441c81fdb66283564f059db2.png"
-            alt="Wellness and Relationships"
-            class="hero-card-image"
-            width="600"
-            height="230">
+    <img
+        src="file_00000000917081f887d9b94d29fdda90.png"
+        alt="Wellness & Relationships Logo"
+        class="hero-logo"
+        width="120"
+        height="120">
 
-        <h2>
-            Learn. Understand. Grow.
-        </h2>
+    <img
+        src="file_00000000441c81fdb66283564f059db2.png"
+        alt="Wellness and Relationships"
+        class="hero-card-image"
+        width="600"
+        height="230"
+        loading="eager">
 
-        <p>
-            Explore practical information designed to
-            help you communicate better, understand
-            healthy boundaries and build stronger
-            relationships.
-        </p>
+    <h2>
+        Learn. Understand. Grow.
+    </h2>
 
-    </div>
+    <p>
+        Explore practical information designed to
+        help you communicate better, understand
+        healthy boundaries and build stronger
+        relationships.
+    </p>
+
+</div>
 
 </section>
 
@@ -995,23 +889,17 @@ footer {
 <section class="search-section"
          aria-label="Search articles">
 
-    <div class="search-box">
+<div class="search-box">
 
-        <span aria-hidden="true">🔎</span>
+    <span aria-hidden="true">🔎</span>
 
-        <input
-            type="search"
-            id="articleSearch"
-            placeholder="Search articles..."
-            aria-label="Search articles">
+    <input
+        type="search"
+        id="articleSearch"
+        placeholder="Search articles..."
+        aria-label="Search articles">
 
-    </div>
-
-    <div
-        id="searchStatus"
-        class="search-status"
-        aria-live="polite">
-    </div>
+</div>
 
 </section>
 
@@ -1021,97 +909,84 @@ footer {
 <section class="section"
          id="topics">
 
-    <div class="section-heading">
+<div class="section-heading">
 
-        <h2>
-            Explore Topics
-        </h2>
+    <h2>Explore Topics</h2>
 
-        <p>
-            Find practical information by topic.
-        </p>
+    <p>
+        Find practical information by topic.
+    </p>
 
-    </div>
+</div>
 
 
-    <div class="topic-grid">
+<div class="topic-grid">
+
+    <a class="topic"
+       href="#articles">
+
+        <div class="topic-icon"
+             aria-hidden="true">
+            💬
+        </div>
+
+        <strong>Communication</strong>
+
+    </a>
 
 
-        <a class="topic"
-           href="#articles">
+    <a class="topic"
+       href="#articles">
 
-            <div class="topic-icon"
-                 aria-hidden="true">
-                💬
-            </div>
+        <div class="topic-icon"
+             aria-hidden="true">
+            ❤️
+        </div>
 
-            <strong>
-                Communication
-            </strong>
+        <strong>Relationships</strong>
 
-        </a>
+    </a>
 
 
-        <a class="topic"
-           href="#articles">
+    <a class="topic"
+       href="#articles">
 
-            <div class="topic-icon"
-                 aria-hidden="true">
-                ❤️
-            </div>
+        <div class="topic-icon"
+             aria-hidden="true">
+            💍
+        </div>
 
-            <strong>
-                Relationships
-            </strong>
+        <strong>Marriage</strong>
 
-        </a>
+    </a>
 
 
-        <a class="topic"
-           href="#articles">
+    <a class="topic"
+       href="#articles">
 
-            <div class="topic-icon"
-                 aria-hidden="true">
-                💍
-            </div>
+        <div class="topic-icon"
+             aria-hidden="true">
+            🤝
+        </div>
 
-            <strong>
-                Marriage
-            </strong>
+        <strong>Consent</strong>
 
-        </a>
+    </a>
 
 
-        <a class="topic"
-           href="#articles">
+    <a class="topic"
+       href="#articles">
 
-            <div class="topic-icon"
-                 aria-hidden="true">
-                🤝
-            </div>
+        <div class="topic-icon"
+             aria-hidden="true">
+            🌱
+        </div>
 
-            <strong>
-                Consent
-            </strong>
+        <strong>Sexual Wellness</strong>
 
-        </a>
+    </a>
 
-
-        <a class="topic"
-           href="#articles">
-
-            <div class="topic-icon"
-                 aria-hidden="true">
-                🌱
-            </div>
-
-            <strong>
-                Sexual Wellness
-            </strong>
-
-        </a>
-
-    </div>
+</div>
 
 </section>
 
@@ -1121,229 +996,215 @@ footer {
 <section class="section"
          id="articles">
 
-    <div class="section-heading">
+<div class="section-heading">
 
-        <h2>
-            Latest Guides
-        </h2>
+    <h2>Latest Guides</h2>
 
-        <p>
-            Practical articles written in a simple,
-            easy-to-understand format.
-        </p>
+    <p>
+        Practical articles written in a simple,
+        easy-to-understand format.
+    </p>
 
+</div>
+
+
+<div class="article-grid">
+
+
+<!-- COMMUNICATION -->
+
+<article class="article-card">
+
+    <img
+        src="file_00000000647081f69a2f8e819b9ddf58.png"
+        alt="Communication in healthy relationships"
+        class="article-image"
+        width="600"
+        height="190"
+        loading="lazy">
+
+    <div class="article-label">
+        Communication
     </div>
 
+    <h3>
+        How to Communicate Better With Your Partner
+    </h3>
 
-    <div class="article-grid">
+    <p>
+        Learn practical ways to listen effectively,
+        express feelings clearly and handle
+        difficult conversations.
+    </p>
 
+    <a class="read"
+       href="article-communication.html">
+        Read Article →
+    </a>
 
-        <!-- COMMUNICATION -->
+</article>
 
-        <article class="article-card">
 
-            <img
-                src="file_00000000647081f69a2f8e819b9ddf58.png"
-                alt="Communication in healthy relationships"
-                class="article-image"
-                width="600"
-                height="190"
-                loading="lazy">
+<!-- CONSENT -->
 
-            <div class="article-label">
-                Communication
-            </div>
+<article class="article-card">
 
-            <h3>
-                How to Communicate Better With Your Partner
-            </h3>
+    <img
+        src="file_0000000065ec8230a6f8ea58c9ba0ac7.png"
+        alt="Healthy consent and boundaries"
+        class="article-image"
+        width="600"
+        height="190"
+        loading="lazy">
 
-            <p>
-                Learn practical ways to listen effectively,
-                express feelings clearly and handle
-                difficult conversations.
-            </p>
-
-            <a class="read"
-               href="article-communication.html">
-
-                Read Article →
-                
-            </a>
-
-        </article>
-
-
-        <!-- CONSENT -->
-
-        <article class="article-card">
-
-            <img
-                src="file_0000000065ec8230a6f8ea58c9ba0ac7.png"
-                alt="Healthy consent and boundaries"
-                class="article-image"
-                width="600"
-                height="190"
-                loading="lazy">
-
-            <div class="article-label">
-                Consent
-            </div>
-
-            <h3>
-                What Healthy Consent Looks Like
-            </h3>
-
-            <p>
-                Understand voluntary and informed consent,
-                personal boundaries and respectful
-                communication.
-            </p>
-
-            <a class="read"
-               href="article-consent.html">
-
-                Read Article →
-
-            </a>
-
-        </article>
-
-
-        <!-- MARRIAGE -->
-
-        <article class="article-card">
-
-            <img
-                src="file_000000009c8081fd96ce0b2a17196a58.png"
-                alt="Healthy marriage and relationships"
-                class="article-image"
-                width="600"
-                height="190"
-                loading="lazy">
-
-            <div class="article-label">
-                Marriage
-            </div>
-
-            <h3>
-                Building a Healthy Marriage
-            </h3>
-
-            <p>
-                Explore practical ideas for communication,
-                trust, understanding and long-term
-                relationship growth.
-            </p>
-
-            <a class="read"
-               href="article-marriage.html">
-
-                Read Article →
-
-            </a>
-
-        </article>
-
-
-        <!-- PRIVACY -->
-
-        <article class="article-card">
-
-            <img
-                src="file_00000000e154820c9b480d540ade0d00.png"
-                alt="Privacy and personal boundaries"
-                class="article-image"
-                width="600"
-                height="190"
-                loading="lazy">
-
-            <div class="article-label">
-                Privacy
-            </div>
-
-            <h3>
-                Privacy & Personal Boundaries
-            </h3>
-
-            <p>
-                Learn why privacy, personal space and
-                healthy boundaries matter in relationships.
-            </p>
-
-            <a class="read"
-               href="article-privacy.html">
-
-                Read Article →
-
-            </a>
-
-        </article>
-
-
-        <!-- SEXUAL WELLNESS -->
-
-        <article class="article-card">
-
-            <img
-                src="file_00000000f89881f6af8b09b5b56ada35.png"
-                alt="Sexual wellness and healthy relationships"
-                class="article-image"
-                width="600"
-                height="190"
-                loading="lazy">
-
-            <div class="article-label">
-                Sexual Wellness
-            </div>
-
-            <h3>
-                Understanding Sexual Wellness
-            </h3>
-
-            <p>
-                Explore basic concepts around communication,
-                respect, wellbeing and healthy relationships.
-            </p>
-
-            <a class="read"
-               href="article-sexual-wellness.html">
-
-                Read Article →
-
-            </a>
-
-        </article>
-
-
-        <!-- WELLNESS -->
-
-        <article class="article-card">
-
-            <div class="article-label">
-                Wellness
-            </div>
-
-            <h3>
-                More Wellness Guides Coming Soon
-            </h3>
-
-            <p>
-                We are continuing to build a useful library
-                of practical wellness and relationship
-                information.
-            </p>
-
-            <a class="read"
-               href="#about">
-
-                Learn More →
-
-            </a>
-
-        </article>
-
+    <div class="article-label">
+        Consent
     </div>
+
+    <h3>
+        What Healthy Consent Looks Like
+    </h3>
+
+    <p>
+        Understand voluntary and informed consent,
+        personal boundaries and respectful
+        communication.
+    </p>
+
+    <a class="read"
+       href="article-consent.html">
+        Read Article →
+    </a>
+
+</article>
+
+
+<!-- MARRIAGE -->
+
+<article class="article-card">
+
+    <img
+        src="file_000000009c8081fd96ce0b2a17196a58.png"
+        alt="Healthy marriage and relationships"
+        class="article-image"
+        width="600"
+        height="190"
+        loading="lazy">
+
+    <div class="article-label">
+        Marriage
+    </div>
+
+    <h3>
+        Building a Healthy Marriage
+    </h3>
+
+    <p>
+        Explore practical ideas for communication,
+        trust, understanding and long-term
+        relationship growth.
+    </p>
+
+    <a class="read"
+       href="article-marriage.html">
+        Read Article →
+    </a>
+
+</article>
+
+
+<!-- PRIVACY -->
+
+<article class="article-card">
+
+    <img
+        src="file_00000000e154820c9b480d540ade0d00.png"
+        alt="Privacy and personal boundaries"
+        class="article-image"
+        width="600"
+        height="190"
+        loading="lazy">
+
+    <div class="article-label">
+        Privacy
+    </div>
+
+    <h3>
+        Privacy & Personal Boundaries
+    </h3>
+
+    <p>
+        Learn why privacy, personal space and
+        healthy boundaries matter in relationships.
+    </p>
+
+    <a class="read"
+       href="article-privacy.html">
+        Read Article →
+    </a>
+
+</article>
+
+
+<!-- SEXUAL WELLNESS -->
+
+<article class="article-card">
+
+    <img
+        src="file_00000000f89881f6af8b09b5b56ada35.png"
+        alt="Sexual wellness and healthy relationships"
+        class="article-image"
+        width="600"
+        height="190"
+        loading="lazy">
+
+    <div class="article-label">
+        Sexual Wellness
+    </div>
+
+    <h3>
+        Understanding Sexual Wellness
+    </h3>
+
+    <p>
+        Explore basic concepts around communication,
+        respect, wellbeing and healthy relationships.
+    </p>
+
+    <a class="read"
+       href="article-sexual-wellness.html">
+        Read Article →
+    </a>
+
+</article>
+
+
+<!-- WELLNESS -->
+
+<article class="article-card">
+
+    <div class="article-label">
+        Wellness
+    </div>
+
+    <h3>
+        More Wellness Guides Coming Soon
+    </h3>
+
+    <p>
+        We are continuing to build a useful library
+        of practical wellness and relationship
+        information.
+    </p>
+
+    <a class="read"
+       href="#about">
+        Learn More →
+    </a>
+
+</article>
+
+</div>
 
 </section>
 
@@ -1353,51 +1214,51 @@ footer {
 <section class="about"
          id="about">
 
-    <div class="about-inner">
+<div class="about-inner">
 
-        <div>
+    <div>
 
-            <h2>
-                About Wellness & Relationships
-            </h2>
+        <h2>
+            About Wellness & Relationships
+        </h2>
 
-            <p>
-                Wellness & Relationships is a simple
-                information website focused on practical
-                topics that can help people better
-                understand communication, relationships,
-                consent and personal wellbeing.
-            </p>
+        <p>
+            Wellness & Relationships is a simple
+            information website focused on practical
+            topics that can help people better
+            understand communication, relationships,
+            consent and personal wellbeing.
+        </p>
 
-            <p>
-                Our goal is to make useful information
-                easier to understand and easier to apply
-                in everyday life.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h2>
-                A Simple Approach
-            </h2>
-
-            <p>
-                Clear language. Practical ideas.
-                Respectful conversations.
-            </p>
-
-            <p>
-                Explore an article, learn something useful,
-                and take what is relevant to your own
-                situation.
-            </p>
-
-        </div>
+        <p>
+            Our goal is to make useful information
+            easier to understand and easier to apply
+            in everyday life.
+        </p>
 
     </div>
+
+
+    <div>
+
+        <h2>
+            A Simple Approach
+        </h2>
+
+        <p>
+            Clear language. Practical ideas.
+            Respectful conversations.
+        </p>
+
+        <p>
+            Explore an article, learn something useful,
+            and take what is relevant to your own
+            situation.
+        </p>
+
+    </div>
+
+</div>
 
 </section>
 
@@ -1407,26 +1268,26 @@ footer {
 <section class="contact"
          id="contact">
 
-    <div class="contact-box">
+<div class="contact-box">
 
-        <h2>
-            Contact Us
-        </h2>
+    <h2>
+        Contact Us
+    </h2>
 
-        <p>
-            Have a question, suggestion or feedback?
-            You can contact us by email.
-        </p>
+    <p>
+        Have a question, suggestion or feedback?
+        You can contact us by email.
+    </p>
 
-        <a
-            href="mailto:contact.getwellnesshub@gmail.com"
-            class="contact-email">
+    <a
+        href="mailto:contact.getwellnesshub@gmail.com"
+        class="contact-email">
 
-            📧 contact.getwellnesshub@gmail.com
+        📧 contact.getwellnesshub@gmail.com
 
-        </a>
+    </a>
 
-    </div>
+</div>
 
 </section>
 
@@ -1435,29 +1296,25 @@ footer {
 
 <section class="cta">
 
-    <div class="cta-box">
+<div class="cta-box">
 
-        <h2>
-            Start Exploring
-        </h2>
+    <h2>
+        Start Exploring
+    </h2>
 
-        <p>
-            Discover practical guides for healthier
-            communication and relationships.
-        </p>
+    <p>
+        Discover practical guides for healthier
+        communication and relationships.
+    </p>
 
-        <a
-            href="#articles"
-            class="btn btn-primary">
+    <a href="#articles"
+       class="btn btn-primary">
+        View Articles
+    </a>
 
-            View Articles
-
-        </a>
-
-    </div>
+</div>
 
 </section>
-
 
 </main>
 
@@ -1466,70 +1323,65 @@ footer {
 
 <footer>
 
-    <div class="footer-inner">
+<div class="footer-inner">
 
+    <div>
 
-        <div>
-
-            <div class="footer-brand">
-                Wellness<span>&</span>Relationships
-            </div>
-
-            <p>
-                Practical information for better
-                communication, healthier relationships
-                and everyday wellbeing.
-            </p>
-
+        <div class="footer-brand">
+            Wellness<span>&</span>Relationships
         </div>
 
-
-        <div>
-
-            <h3>
-                Explore
-            </h3>
-
-            <a href="#topics">
-                Topics
-            </a>
-
-            <a href="#articles">
-                Articles
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Contact
-            </h3>
-
-            <a href="#contact">
-                Contact Us
-            </a>
-
-            <a href="mailto:contact.getwellnesshub@gmail.com">
-                Email Us
-            </a>
-
-        </div>
+        <p>
+            Practical information for better
+            communication, healthier relationships
+            and everyday wellbeing.
+        </p>
 
     </div>
 
 
-    <div class="copyright">
+    <div>
 
-        © 2026 Wellness & Relationships.
-        All rights reserved.
+        <h3>Explore</h3>
+
+        <a href="#topics">
+            Topics
+        </a>
+
+        <a href="#articles">
+            Articles
+        </a>
+
+        <a href="#about">
+            About
+        </a>
 
     </div>
+
+
+    <div>
+
+        <h3>Contact</h3>
+
+        <a href="#contact">
+            Contact Us
+        </a>
+
+        <a href="mailto:contact.getwellnesshub@gmail.com">
+            Email Us
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="copyright">
+
+    © 2026 Wellness & Relationships.
+    All rights reserved.
+
+</div>
 
 </footer>
 
@@ -1544,19 +1396,12 @@ const searchInput =
 const articleCards =
     document.querySelectorAll(".article-card");
 
-const searchStatus =
-    document.getElementById("searchStatus");
-
-
-function updateSearchStatus() {
+searchInput.addEventListener("input", function () {
 
     const searchText =
-        searchInput.value.toLowerCase().trim();
+        this.value.toLowerCase().trim();
 
-    let visibleCount = 0;
-
-
-    articleCards.forEach(function(card) {
+    articleCards.forEach(function (card) {
 
         const text =
             card.textContent.toLowerCase();
@@ -1564,8 +1409,6 @@ function updateSearchStatus() {
         if (text.includes(searchText)) {
 
             card.style.display = "";
-
-            visibleCount++;
 
         } else {
 
@@ -1575,29 +1418,9 @@ function updateSearchStatus() {
 
     });
 
-
-    if (searchText === "") {
-
-        searchStatus.textContent = "";
-
-    } else {
-
-        searchStatus.textContent =
-            visibleCount +
-            " article(s) found.";
-
-    }
-
-}
-
-
-searchInput.addEventListener(
-    "input",
-    updateSearchStatus
-);
+});
 
 </script>
-
 
 </body>
 </html>
