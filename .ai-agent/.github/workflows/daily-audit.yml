@@ -1,0 +1,110 @@
+name: Daily Website Audit
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+
+      - name: Check protected assets
+        shell: bash
+        run: |
+          set -e
+
+          echo "Checking protected website assets..."
+
+          files=(
+            "file_00000000917081f887d9b94d29fdda90.png"
+            "file_00000000441c81fdb66283564f059db2.png"
+            "file_00000000647081f69a2f8e819b9ddf58.png"
+            "file_0000000065ec8230a6f8ea58c9ba0ac7.png"
+            "file_000000009c8081fd96ce0b2a17196a58.png"
+            "file_00000000e154820c9b480d540ade0d00.png"
+            "file_00000000f89881f6af8b09b5b56ada35.png"
+          )
+
+          for file in "${files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "ERROR: Protected file missing: $file"
+              exit 1
+            fi
+          done
+
+          echo "All protected assets are present."
+
+      - name: Check important website files
+        shell: bash
+        run: |
+          set -e
+
+          files=(
+            "index.html"
+            "robots.txt"
+            "sitemap.xml"
+            "style.css"
+            "script.js"
+          )
+
+          for file in "${files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "ERROR: Important file missing: $file"
+              exit 1
+            fi
+          done
+
+          echo "Important website files are present."
+
+      - name: Basic HTML check
+        shell: bash
+        run: |
+          set -e
+
+          echo "Checking HTML files..."
+
+          for file in *.html; do
+            [ -f "$file" ] || continue
+
+            if ! grep -qi "<html" "$file"; then
+              echo "WARNING: $file may not contain a valid HTML document."
+            fi
+
+            if ! grep -qi "</html>" "$file"; then
+              echo "WARNING: $file may be missing </html>."
+            fi
+          done
+
+          echo "Basic HTML audit completed."
+
+      - name: Create audit summary
+        shell: bash
+        run: |
+          {
+            echo "# Daily Website Audit"
+            echo
+            echo "Date: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo
+            echo "## Status"
+            echo "Protected assets: PASS"
+            echo "Important files: PASS"
+            echo "Basic HTML check: COMPLETED"
+            echo
+            echo "## Important note"
+            echo "This workflow performs a safety audit only."
+            echo "It does not automatically modify website files."
+          } > daily-audit-report.md
+
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-website-audit
+          path: daily-audit-report.md
